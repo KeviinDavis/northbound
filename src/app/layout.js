@@ -4,17 +4,18 @@ import "./globals.css";
 // ─── FONT — swap this out per project ───────────────────────
 const font = Inter({
   subsets: ["latin"],
+  style: ["normal", "italic"],
   variable: "--font-primary",
   display: "swap",
 });
 
 // ─── METADATA — update per project ──────────────────────────
 export const metadata = {
-  title: "Project Title",
-  description: "Project description",
+  title: "Northbound",
+  description: "Northbound — curated goods for the journey ahead.",
   openGraph: {
-    title: "Project Title",
-    description: "Project description",
+    title: "Northbound",
+    description: "Northbound — curated goods for the journey ahead.",
     type: "website",
     locale: "en_US",
   },

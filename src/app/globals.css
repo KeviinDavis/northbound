@@ -57,21 +57,23 @@ main {
    ============================================================ */
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--weight-medium);
-  line-height: 1.1;
+  font-weight: var(--weight-normal);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
 }
 
 h1 { font-size: var(--font-h1); }
 h2 { font-size: var(--font-h2); }
 h3 { font-size: var(--font-h3); }
-h4 { font-size: var(--font-h4); line-height: 1.2; }
-h5 { font-size: var(--font-h5); line-height: 1.3; }
-h6 { font-size: var(--font-h6); line-height: 1.4; }
+h4 { font-size: var(--font-h4); }
+h5 { font-size: var(--font-h5); }
+h6 { font-size: var(--font-h6); }
 
 p {
   font-size: var(--font-body);
   font-weight: var(--weight-normal);
-  line-height: 1.6;
+  line-height: var(--leading-normal);
 }
 
 /* Utility: secondary font */
@@ -82,7 +84,7 @@ p {
 /* Utility: tagline / eyebrow */
 .text-tagline {
   font-size: var(--font-tagline);
-  letter-spacing: 0.08em;
+  letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
 }
 

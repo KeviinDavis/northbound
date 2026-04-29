@@ -1,55 +1,64 @@
 :root {
 
   /* ============================================================
-     CUSTOMIZE PER PROJECT — fill these in when starting
+     NORTHBOUND — Project Tokens
      ============================================================ */
 
   /* Primary font — set in layout.js via next/font and pass as CSS var */
-  /* --font-primary is injected by Next.js font system, no need to set here */
+  /* --font-primary is injected by Next.js font system */
 
-  /* Secondary / display font (optional — replace per project) */
-  --font-secondary: serif;
+  /* Raw color palette */
+  --color-bone:      #EFEFEC;
+  --color-paper:     #F5F5F2;
+  --color-ink:       #171717;
+  --color-soft-ink:  #3A3A38;
+  --color-muted:     #8E8C86;
+  --color-stone:     #D8D5D0;
+  --color-line:      rgba(23, 23, 23, 0.18);
 
-  /* Raw color values — replace per project */
-  --color-black:         #000000;
-  --color-white:         #ffffff;
-  --color-gray:          #949494;
-  --color-gray-light:    #b5b5b5;
-
-  /* Semantic colors — reference raw values, swap per project */
-  --color-bg-primary:    var(--color-white);
-  --color-bg-secondary:  #f6f6f6;
-  --color-text-primary:  var(--color-black);
-  --color-text-secondary: var(--color-gray);
-  --color-accent:        var(--color-black);
-  --color-stroke:        var(--color-black);
-  --color-stroke-light:  #ffffff26;
+  /* Semantic colors */
+  --color-bg-primary:     var(--color-bone);
+  --color-bg-secondary:   var(--color-paper);
+  --color-text-primary:   var(--color-ink);
+  --color-text-secondary: var(--color-soft-ink);
+  --color-text-muted:     var(--color-muted);
+  --color-accent:         var(--color-ink);
+  --color-stroke:         var(--color-line);
+  --color-stroke-solid:   var(--color-stone);
 
   /* ============================================================
-     FIXED SYSTEM TOKENS — do not change between projects
+     SYSTEM TOKENS
      ============================================================ */
 
   /* Container */
   --container-max:    90rem;
   --container-narrow: 52rem;
 
-  /* Type scale — fluid range: 400px to 1440px */
-  --font-h1:       clamp(2.5rem, calc(1.5rem + 3.077vw), 4.5rem);
-  --font-h2:       clamp(2rem, calc(1.25rem + 2.308vw), 3.5rem);
-  --font-h3:       clamp(1.75rem, calc(1.365rem + 1.538vw), 2.75rem);
+  /* Type scale — fluid range: 375px to 1440px */
+  --font-h1:       clamp(3rem, calc(1.77rem + 5.26vw), 6.5rem);
+  --font-h2:       clamp(2rem, calc(1.3rem + 3vw), 4rem);
+  --font-h3:       clamp(1.75rem, calc(1.31rem + 1.88vw), 3rem);
   --font-h4:       1.5rem;
-  --font-h5:       1.375rem;
-  --font-h6:       1.25rem;
+  --font-h5:       1.25rem;
+  --font-h6:       1.125rem;
   --font-body:     1rem;
   --font-body-sm:  0.875rem;
   --font-tagline:  0.75rem;
   --font-btn:      0.875rem;
 
   /* Weights */
+  --weight-light:    300;
   --weight-normal:   400;
   --weight-medium:   500;
   --weight-semibold: 600;
-  --weight-bold:     700;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.04em;
+  --tracking-wide:   0.08em;
+
+  /* Line height */
+  --leading-tight:   0.92;
+  --leading-normal:  1.55;
 
   /* Spacing scale */
   --space-2xs:   0.375rem;
@@ -67,7 +76,7 @@
   --space-8xl:   5rem;
 
   /* Border radius */
-  --radius-default: 0.5rem;
+  --radius-default: 0.25rem;
 
   /* Focus */
   --focus-ring: 2px solid var(--color-accent);
