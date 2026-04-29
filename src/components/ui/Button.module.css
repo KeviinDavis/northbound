@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-s) var(--space-2xl);
+
+  font-size: var(--font-btn);
+  font-weight: var(--weight-medium);
+
+  border-radius: var(--radius-default);
+  border: 1px solid var(--color-stroke);
+
+  transition: background-color var(--transition-base),
+              color var(--transition-base);
+  cursor: pointer;
+}
+
+/* PRIMARY — Accent fill */
+.primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg-primary);
+}
+
+.primary:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
+/* SECONDARY — Inverse */
+.secondary {
+  background-color: var(--color-bg-primary);
+  color: var(--color-accent);
+}
+
+.secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg-primary);
+}
