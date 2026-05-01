@@ -15,6 +15,7 @@
   --color-muted:     #8E8C86;
   --color-stone:     #D8D5D0;
   --color-line:      rgba(23, 23, 23, 0.18);
+  --color-sage:      #65756B;
 
   /* Semantic colors */
   --color-bg-primary:     var(--color-bone);
@@ -25,6 +26,7 @@
   --color-accent:         var(--color-ink);
   --color-stroke:         var(--color-line);
   --color-stroke-solid:   var(--color-stone);
+  --color-bg-menu:        var(--color-sage);
 
   /* ============================================================
      SYSTEM TOKENS

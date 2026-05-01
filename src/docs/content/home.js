@@ -11,7 +11,7 @@
 // Component: HeroEditorial
 // Source: v2 §4.1
 export const hero = {
-  eyebrow: "NORTHBOUND ® · PORTLAND, OREGON · EST. 2019",
+  eyebrow: "PORTLAND, OREGON · EST. 2019",
   headline: {
     desktop: "BUILT,\nUSED AND\nBRANDED.",
     mobile: "BUILT,\nUSED AND\nBRANDED.",

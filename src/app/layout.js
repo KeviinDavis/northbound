@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 // ─── FONT — swap this out per project ───────────────────────
@@ -24,11 +25,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={font.variable}>
+      
       <body>
         <a href="#main" className="skip-link">
           Skip to content
         </a>
         <main id="main">{children}</main>
+        <Footer variant="light"/>
       </body>
     </html>
   );

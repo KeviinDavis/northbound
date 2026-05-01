@@ -1,3 +1,4 @@
+import Header from "@/components/layout/Header";
 import HeroEditorial from "@/components/HeroEditorial";
 import FeaturedProjectFull from "@/components/FeaturedProjectFull";
 import FeaturedProjectGrid from "@/components/FeaturedProjectGrid";
@@ -13,6 +14,7 @@ import { hero, featuredFull, featuredGrid, aboutPreview, logoWall, logoWallCycle
 export default function Home() {
   return (
     <>
+      <Header variant="overlay" />
       <HeroEditorial content={hero} />
       <FeaturedProjectFull content={featuredFull} />
       <Section>
@@ -34,7 +36,7 @@ export default function Home() {
       </Section>
       <Section>
         <Container>
-          <JournalPreviewGrid content={journalPreview} />
+          <JournalPreviewGrid content={{ ...journalPreview, cols: 2, articles: journalPreview.articles.slice(0, 2) }} />
         </Container>
       </Section>
     </>
