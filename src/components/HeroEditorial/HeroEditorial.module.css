@@ -5,6 +5,7 @@
 
 @media (min-width: 768px) {
   .section {
+    padding-top: var(--space-7xl);
     padding-bottom: var(--space-5xl);
   }
 }
@@ -31,7 +32,7 @@
 
 @media (min-width: 768px) {
   .eyebrowWrap {
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-8xl);
   }
 }
 

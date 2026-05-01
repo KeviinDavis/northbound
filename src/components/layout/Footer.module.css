@@ -147,6 +147,15 @@
 .ctaButton {
   border-radius: 999rem;
   align-self: flex-start;
+  padding: var(--space-2xs) var(--space-l);
+  font-size: var(--font-tagline);
+}
+
+@media (min-width: 768px) {
+  .ctaButton {
+    padding: var(--space-s) var(--space-2xl);
+    font-size: var(--font-btn);
+  }
 }
 
 .arrow {
