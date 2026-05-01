@@ -1,0 +1,43 @@
+.eyebrow {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4xl);
+}
+
+@media (min-width: 768px) {
+  .eyebrow {
+    margin-bottom: var(--space-5xl);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: var(--space-7xl);
+  padding: var(--space-3xl) var(--space-2xl);
+  border-top: 1px solid var(--color-stroke);
+}
+
+@media (min-width: 768px) {
+  .cell {
+    padding: var(--space-3xl);
+  }
+}
+
+.name {
+  font-size: var(--font-h5);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-primary);
+  line-height: var(--leading-tight);
+}

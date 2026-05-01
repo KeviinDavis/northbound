@@ -1,9 +1,10 @@
 import HeroEditorial from "@/components/HeroEditorial";
 import FeaturedProjectFull from "@/components/FeaturedProjectFull";
-import ProjectTile from "@/components/ProjectTile";
+import FeaturedProjectGrid from "@/components/FeaturedProjectGrid";
+import AboutSplit from "@/components/AboutSplit";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
-import { hero, featuredFull, featuredGrid } from "@/docs/content/home";
+import { hero, featuredFull, featuredGrid, aboutPreview } from "@/docs/content/home";
 
 export default function Home() {
   return (
@@ -12,11 +13,12 @@ export default function Home() {
       <FeaturedProjectFull content={featuredFull} />
       <Section>
         <Container>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 30rem), 1fr))", gap: "var(--space-4xl)" }}>
-            {featuredGrid.projects.map((project) => (
-              <ProjectTile key={project.slug} project={project} />
-            ))}
-          </div>
+          <FeaturedProjectGrid cols={featuredGrid.cols} projects={featuredGrid.projects} />
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <AboutSplit content={aboutPreview} />
         </Container>
       </Section>
     </>

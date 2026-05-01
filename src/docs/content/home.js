@@ -82,6 +82,8 @@ export const aboutPreview = {
   // TODO: Studio environment photo — candid, warm neutral palette, Northeast Portland workspace.
   // Not a portrait. Per copy doc §4.4 notes.
   image: null,
+  imageMeta: "STUDIO.JPG — 2026",
+  imageCaption: "STUDIO ENVIRONMENT, NORTHEAST PORTLAND",
 };
 
 // Component: LogoWallDense

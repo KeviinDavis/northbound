@@ -1,0 +1,145 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4xl);
+}
+
+.copy {
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .copy {
+    order: unset;
+  }
+
+  .imageRight .imageBlock {
+    order: 2;
+  }
+
+  .imageRight .copy {
+    order: 1;
+  }
+
+  .imageLeft .imageBlock {
+    order: 1;
+  }
+
+  .imageLeft .copy {
+    order: 2;
+  }
+}
+
+/* ---- Image block ---- */
+
+.imageBlock {
+  position: relative;
+  background-color: var(--color-soft-ink);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .imageBlock {
+    aspect-ratio: unset;
+    height: 55vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imageBlock {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.imageMeta {
+  position: absolute;
+  top: var(--space-2xl);
+  left: var(--space-2xl);
+  color: var(--color-bg-primary);
+}
+
+.imageCaption {
+  position: absolute;
+  bottom: var(--space-2xl);
+  left: var(--space-2xl);
+  color: var(--color-bg-primary);
+  font-size: var(--font-body-sm);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  max-width: 70%;
+}
+
+/* ---- Copy block ---- */
+
+.headline {
+  font-size: var(--font-h3);
+  font-weight: var(--weight-semibold);
+  line-height: 1;
+}
+
+.headlineDesktop {
+  display: none;
+}
+
+.headlineMobile {
+  display: inline;
+}
+
+@media (min-width: 1024px) {
+  .headline {
+    font-size: var(--font-h2);
+  }
+
+  .headlineDesktop {
+    display: inline;
+  }
+
+  .headlineMobile {
+    display: none;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  color: var(--color-text-primary);
+  font-size: var(--font-body-sm);
+}
+
+@media (min-width: 1024px) {
+  .body {
+    font-size: var(--font-body);
+  }
+}
+
+.eyebrow {
+  color: var(--color-text-muted);
+  font-size: var(--font-tagline);
+}
+
+.cta {
+  font-size: var(--font-body-sm);
+  font-weight: var(--weight-medium);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  color: var(--color-text-primary);
+  align-self: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .cta {
+    font-size: var(--font-btn);
+  }
+}
