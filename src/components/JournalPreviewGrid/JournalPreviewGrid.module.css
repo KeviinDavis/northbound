@@ -65,6 +65,15 @@
   white-space: nowrap;
 }
 
+.arrow {
+  display: inline-block;
+  transition: transform var(--transition-base);
+}
+
+.cta:hover .arrow {
+  transform: translateX(0.25rem);
+}
+
 @media (max-width: 1023px) {
   .cta {
     font-size: var(--font-body-sm);

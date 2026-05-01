@@ -28,6 +28,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .imageInner {
+    height: 45vh;
+  }
+}
+
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .root:hover .imageInner {
     transform: scale(1.03);
@@ -71,4 +77,13 @@
   text-decoration: underline;
   text-underline-offset: 0.25em;
   color: var(--color-text-primary);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform var(--transition-base);
+}
+
+.cta:hover .arrow {
+  transform: translateX(0.25rem);
 }

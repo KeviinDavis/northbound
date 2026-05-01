@@ -22,7 +22,7 @@ export default function JournalPreviewGrid({ content }) {
           </h2>
           {cta && (
             <Link href={cta.href} className={styles.cta}>
-              {cta.label}
+              {cta.label.replace(" →", "")} <span className={styles.arrow}>&rarr;</span>
             </Link>
           )}
         </div>

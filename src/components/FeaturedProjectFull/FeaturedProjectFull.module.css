@@ -92,13 +92,23 @@
   color: var(--color-text-primary);
 }
 
+.arrow {
+  display: inline-block;
+  transition: transform var(--transition-base);
+}
+
+.ctaLink:hover .arrow,
+.detailsLink:hover .arrow {
+  transform: translateX(0.25rem);
+}
+
 @media (max-width: 767px) {
   .card {
-    min-height: 40vh;
+    min-height: 35vh;
   }
 
   .content {
-    min-height: 50vh;
+    min-height: 45vh;
     padding: var(--space-3xl) var(--space-xl);
   }
 

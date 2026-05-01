@@ -25,7 +25,7 @@ export default function ProjectTile({ project, aspectRatio = "1/1" }) {
         <p className={`text-tagline ${styles.category}`}>{project.category}</p>
         <p className={styles.caption}>{project.caption}</p>
         <Link href={project.cta.href} className={styles.cta}>
-          {project.cta.label}
+          {project.cta.label.replace(" →", "")} <span className={styles.arrow}>&rarr;</span>
         </Link>
       </div>
     </article>

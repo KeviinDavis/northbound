@@ -38,7 +38,7 @@ export default function HeroEditorial({ content }) {
       <header className={styles.root}>
         <div className={`${styles.clip} ${styles.eyebrowWrap}`}>
           <p ref={addRef} className={`text-tagline ${styles.eyebrow}`}>
-            {content.eyebrow}
+            {/* {content.eyebrow} */}
           </p>
         </div>
 

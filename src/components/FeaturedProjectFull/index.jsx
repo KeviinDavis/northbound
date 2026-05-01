@@ -26,7 +26,7 @@ export default function FeaturedProjectFull({ content }) {
                 FEATURED &middot; {content.year}
               </p>
               <Link href={content.cta.href} className={styles.ctaLink}>
-                {content.cta.label}
+                {content.cta.label.replace(" →", "")} <span className={styles.arrow}>&rarr;</span>
               </Link>
             </div>
 
@@ -44,7 +44,7 @@ export default function FeaturedProjectFull({ content }) {
           <p className={`text-tagline ${styles.detailsCategory}`}>{content.category}</p>
           <p className={styles.detailsCaption}>{content.caption}</p>
           <Link href={content.cta.href} className={styles.detailsLink}>
-            {content.cta.label}
+            {content.cta.label.replace(" →", "")} <span className={styles.arrow}>&rarr;</span>
           </Link>
         </div>
       </Container>

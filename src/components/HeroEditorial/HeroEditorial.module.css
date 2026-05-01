@@ -42,7 +42,7 @@
 .headline {
   font-size: var(--font-display);
   font-weight: var(--weight-semibold);
-  line-height: var(--leading-tightest);
+  line-height: var(--leading-tight);
   margin-bottom: var(--space-m);
   max-width: 55%;
 }
@@ -80,7 +80,7 @@
 }
 
 .subHeadline {
-  font-size: var(--font-h4);
+  font-size: var(--font-h5);
   font-weight: var(--weight-semibold);
   line-height: .8;
   letter-spacing: var(--tracking-tight);

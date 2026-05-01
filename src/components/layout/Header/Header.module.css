@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: var(--space-m) var(--space-2xl);
+  padding: var(--space-m) var(--space-xl);
   z-index: var(--z-nav);
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
@@ -188,6 +188,11 @@
 /* ── Responsive: mobile ───────────────────────────── */
 
 @media (max-width: 768px) {
+.header {
+    padding: var(--space-m) var(--space-m);
+
+}
+
   .grid {
     grid-template-columns: 1fr auto;
     column-gap: 0;

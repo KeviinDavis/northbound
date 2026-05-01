@@ -44,7 +44,7 @@ export default function AboutSplit({ content }) {
         </div>
         {content.cta && (
           <Link href={content.cta.href} className={styles.cta}>
-            {content.cta.label}
+            {content.cta.label.replace(" →", "")} <span className={styles.arrow}>&rarr;</span>
           </Link>
         )}
       </div>
