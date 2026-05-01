@@ -2,6 +2,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: var(--space-xs);
 
   padding: var(--space-s) var(--space-2xl);
 
@@ -22,10 +23,6 @@
   color: var(--color-bg-primary);
 }
 
-.primary:hover {
-  background-color: transparent;
-  color: var(--color-accent);
-}
 
 /* SECONDARY — Inverse */
 .secondary {

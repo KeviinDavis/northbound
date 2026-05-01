@@ -76,11 +76,6 @@ p {
   line-height: var(--leading-normal);
 }
 
-/* Utility: secondary font */
-.text-secondary {
-  font-family: var(--font-secondary);
-}
-
 /* Utility: tagline / eyebrow */
 .text-tagline {
   font-size: var(--font-tagline);

@@ -17,7 +17,7 @@ export const hero = {
     mobile: "BUILT, USED AND BRANDED.",
   },
   subHeadline: "A design studio for the outdoors.",
-  body: "A design studio working with gear companies, apparel labels, guide services, and the people who make them. Branding, identity, and digital \u2014 that\u2019s the whole offer.",
+  body: "Working with gear companies, apparel labels, guide services, and the people who make them. Branding, identity, and digital \u2014 that\u2019s the whole offer.",
   ctas: [
     { label: "See the work \u2192", href: "/work" },
     { label: "What we do \u2192", href: "/services" },
