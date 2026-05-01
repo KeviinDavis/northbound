@@ -5,21 +5,11 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: var(--space-m);
+  padding: var(--space-m) var(--space-2xl);
   z-index: var(--z-nav);
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: var(--space-m) var(--space-2xl);
-  }
-
-  .logo {
-    font-size: var(--font-body);
-  }
 }
 
 .hidden {
@@ -56,7 +46,7 @@
 .logo {
   text-decoration: none;
   color: inherit;
-  font-size: var(--font-h6);
+  font-size: var(--font-body);
   font-weight: var(--weight-medium);
   letter-spacing: var(--tracking-tight);
   line-height: 1;

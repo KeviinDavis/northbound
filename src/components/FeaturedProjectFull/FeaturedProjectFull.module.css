@@ -5,7 +5,7 @@
 .card {
   position: relative;
   background-color: var(--color-soft-ink);
-  min-height: 40vh;
+  min-height: 50vh;
   overflow: hidden;
 }
 
@@ -20,8 +20,8 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
-  padding: var(--space-3xl) var(--space-xl);
+  min-height: 60vh;
+  padding: var(--space-5xl) var(--space-2xl);
   color: var(--color-bg-primary);
 }
 
@@ -36,28 +36,41 @@
 }
 
 .ctaLink {
-  display: none;
+  display: inline;
+  font-size: var(--font-body-sm);
+  font-weight: var(--weight-medium);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  color: var(--color-bg-primary);
 }
 
 .cardFooter {
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .headline {
   font-size: var(--font-h2);
   font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-m);
 }
 
 .caption {
-  display: none;
+  display: block;
+  max-width: var(--container-narrow);
 }
 
 .category {
-  display: none;
+  display: block;
+  color: var(--color-muted);
+  flex-shrink: 0;
 }
 
 /* Mobile details below card */
 .details {
+  display: none;
   padding-top: var(--space-xl);
   padding-bottom: var(--space-xs);
 }
@@ -79,49 +92,37 @@
   color: var(--color-text-primary);
 }
 
-/* ---- Desktop ---- */
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .card {
-    min-height: 50vh;
+    min-height: 40vh;
   }
 
   .content {
-    min-height: 60vh;
-    padding: var(--space-5xl) var(--space-2xl);
+    min-height: 50vh;
+    padding: var(--space-3xl) var(--space-xl);
   }
 
   .ctaLink {
-    display: inline;
-    font-size: var(--font-body-sm);
-    font-weight: var(--weight-medium);
-    text-decoration: underline;
-    text-underline-offset: 0.25em;
-    color: var(--color-bg-primary);
+    display: none;
   }
 
   .cardFooter {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: block;
   }
 
   .headline {
-    margin-bottom: var(--space-m);
+    margin-bottom: 0;
   }
 
   .caption {
-    display: block;
-    max-width: var(--container-narrow);
+    display: none;
   }
 
   .category {
-    display: block;
-    color: var(--color-muted);
-    flex-shrink: 0;
+    display: none;
   }
 
   .details {
-    display: none;
+    display: block;
   }
 }
-

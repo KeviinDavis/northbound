@@ -12,20 +12,20 @@
 }
 
 .imageInner {
-  height: 55vh;
+  aspect-ratio: 1 / 1;
   background-color: var(--color-soft-ink);
   transition: transform var(--transition-base);
 }
 
-@media (min-width: 960px) {
-  .imageInner {
-    height: auto;
-    aspect-ratio: 1 / 1;
-  }
-}
-
 .portrait {
   aspect-ratio: 4 / 5;
+}
+
+@media (max-width: 959px) {
+  .imageInner {
+    height: 55vh;
+    aspect-ratio: auto;
+  }
 }
 
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {

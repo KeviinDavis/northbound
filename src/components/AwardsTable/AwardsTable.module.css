@@ -23,20 +23,20 @@
 }
 
 .headlineDesktop {
-  display: none;
-}
-
-.headlineMobile {
   display: inline;
 }
 
-@media (min-width: 1024px) {
+.headlineMobile {
+  display: none;
+}
+
+@media (max-width: 1023px) {
   .headlineDesktop {
-    display: inline;
+    display: none;
   }
 
   .headlineMobile {
-    display: none;
+    display: inline;
   }
 }
 

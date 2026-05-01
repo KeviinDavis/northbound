@@ -1,71 +1,70 @@
 .eyebrow {
   color: var(--color-text-muted);
-  margin-bottom: var(--space-4xl);
-}
-
-@media (min-width: 768px) {
-  .eyebrow {
-    margin-bottom: var(--space-5xl);
-  }
+  margin-bottom: var(--space-5xl);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-bottom: 1px solid var(--color-stroke);
-  border-right: 1px solid var(--color-stroke);
-}
-
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .cell {
+  position: relative;
+}
+
+.grid .cell:nth-child(n + 13) {
+  display: none;
+}
+
+.logo {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: var(--space-m);
-  padding: var(--space-2xl);
-  border-top: 1px solid var(--color-stroke);
-  border-left: 1px solid var(--color-stroke);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .cell {
-    padding: var(--space-s);
-    gap: var(--space-2xs);
+.logoTarget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50%;
+  position: absolute;
+}
+
+.logoImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+@media (max-width: 1439px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 
-  .name {
-    font-size: var(--font-tagline);
-  }
-
-  .index {
-    font-size: var(--font-tagline);
+  .grid .cell:nth-child(n + 11) {
+    display: none;
   }
 }
 
-@media (min-width: 1440px) {
-  .cell {
-    padding: var(--space-3xl);
+@media (max-width: 767px) {
+  .eyebrow {
+    margin-bottom: var(--space-4xl);
   }
-}
 
-.index {
-  color: var(--color-text-muted);
-}
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.name {
-  font-size: var(--font-body);
-  font-weight: var(--weight-semibold);
-  color: var(--color-text-primary);
-  line-height: var(--leading-tight);
-}
+  .logo {
+    aspect-ratio: 2 / 1;
+  }
 
-@media (min-width: 1440px) {
-  .name {
-    font-size: var(--font-h5);
+  .grid .cell:nth-child(n + 9) {
+    display: none;
   }
 }
