@@ -57,10 +57,12 @@
 }
 
 .subHeadline {
-  font-size: 1.8rem;
-  line-height: var(--leading-tight);
+  font-size: var(--font-h3);
+  font-weight: var(--weight-semibold);
+  line-height: 1;
   letter-spacing: var(--tracking-tight);
   color: var(--color-text-primary);
+  text-transform: uppercase;
   margin-bottom: var(--space-m);
 }
 
