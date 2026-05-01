@@ -54,6 +54,7 @@ main {
   z-index: 1;
   background-color: var(--color-bg-primary);
   margin-bottom: 100vh;
+  padding-top: var(--space-6xl);
 }
 
 /* ============================================================
