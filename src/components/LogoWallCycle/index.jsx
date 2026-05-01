@@ -3,19 +3,21 @@
 import { useEffect, useRef, useCallback } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
 import styles from "./LogoWallCycle.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function LogoWallCycle({
-  content,
-  shuffle = false,
-  loopDelay = 1.5,
-  duration = 0.9,
-}) {
+export default function LogoWallCycle({ content }) {
+  const {
+    eyebrow,
+    logos = [],
+    shuffle = false,
+    loopDelay = 1.5,
+    duration = 0.9,
+  } = content ?? {};
+
   const rootRef = useRef(null);
   const listRef = useRef(null);
   const tlRef = useRef(null);
@@ -24,8 +26,6 @@ export default function LogoWallCycle({
   const patternIndexRef = useRef(0);
   const visibleItemsRef = useRef([]);
   const visibleCountRef = useRef(0);
-
-  const logos = content?.logos ?? [];
 
   const shuffleArray = useCallback((arr) => {
     const a = arr.slice();
@@ -173,22 +173,19 @@ export default function LogoWallCycle({
   return (
     <Section>
       <Container>
+        {eyebrow && <p className={`text-tagline ${styles.eyebrow}`}>{eyebrow}</p>}
         <div ref={rootRef}>
           <div ref={listRef} className={styles.grid}>
             {logos.map((logo) => (
-              <div key={logo.slug} data-logo-item="" className={styles.cell}>
+              <div key={logo.alt} data-logo-item="" className={styles.cell}>
                 <div data-logo-parent="" className={styles.logo}>
                   <div data-logo-target="" className={styles.logoTarget}>
-                    {logo.image ? (
-                      <Image
-                        src={logo.image}
-                        alt={logo.name}
-                        fill
-                        className={styles.logoImg}
-                      />
-                    ) : (
-                      <span className={styles.logoText}>{logo.name}</span>
-                    )}
+                    <img
+                      src={logo.src}
+                      loading="lazy"
+                      alt={logo.alt || ""}
+                      className={styles.logoImg}
+                    />
                   </div>
                 </div>
               </div>

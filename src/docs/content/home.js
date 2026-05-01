@@ -107,6 +107,47 @@ export const logoWall = {
   ],
 };
 
+// Component: LogoWallCycle
+// Source: v2 §4.5 (cycling variant)
+export const logoWallCycle = {
+  eyebrow: "SELECT CLIENTS \u00B7 2019 \u2014 PRESENT",
+  shuffle: false,
+  loopDelay: 1.5,
+  duration: 0.9,
+  logos: [
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea9d37fbceb3be49cb_logo-webflow.svg", alt: "Webflow" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea48d4fb0c708dd1dc_logo-microsoft.svg", alt: "Microsoft" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea9ba384ff47fa5d51_logo-asana.svg", alt: "Asana" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370eaec918fbd4a0acc12_logo-snapchat.svg", alt: "Snapchat" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea155a551c08692a03_logo-google.svg", alt: "Google" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370eafdf2b295d65f9450_logo-bluesky.svg", alt: "Bluesky" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea68a433ee5808ed90_logo-codepen.svg", alt: "CodePen" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea2ebc0415055d04f3_logo-linkedin.svg", alt: "LinkedIn" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea7699561e6f9f008f_logo-android.svg", alt: "Android" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea753f2afe2f6b036f_logo-apple.svg", alt: "Apple" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370eabec1e0c00348b5ed_logo-twitter.svg", alt: "Twitter" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea0e0e1dc81a9b5799_logo-osmo.svg", alt: "Osmo" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea36c91584afe43e2d_logo-medium.svg", alt: "Medium" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370ea87b05cdce0387084_logo-eventbrite.svg", alt: "Eventbrite" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370eaf4465d763c2f9b2a_logo-behance.svg", alt: "Behance" },
+    { src: "https://cdn.prod.website-files.com/68836e3f51ac98fec14ceed2/688370eaec1d445957d7e3a1_logo-chatgpt.svg", alt: "ChatGPT" },
+    { src: "https://cdn.simpleicons.org/spotify/white", alt: "Spotify" },
+    { src: "https://cdn.simpleicons.org/github/white", alt: "GitHub" },
+    { src: "https://cdn.simpleicons.org/netflix/white", alt: "Netflix" },
+    { src: "https://cdn.simpleicons.org/airbnb/white", alt: "Airbnb" },
+    { src: "https://cdn.simpleicons.org/dropbox/white", alt: "Dropbox" },
+    { src: "https://cdn.simpleicons.org/figma/white", alt: "Figma" },
+    { src: "https://cdn.simpleicons.org/notion/white", alt: "Notion" },
+    { src: "https://cdn.simpleicons.org/stripe/white", alt: "Stripe" },
+    { src: "https://cdn.simpleicons.org/shopify/white", alt: "Shopify" },
+    { src: "https://cdn.simpleicons.org/discord/white", alt: "Discord" },
+    { src: "https://cdn.simpleicons.org/twitch/white", alt: "Twitch" },
+    { src: "https://cdn.simpleicons.org/pinterest/white", alt: "Pinterest" },
+    { src: "https://cdn.simpleicons.org/youtube/white", alt: "YouTube" },
+    { src: "https://cdn.simpleicons.org/uber/white", alt: "Uber" },
+  ],
+};
+
 // Component: AwardsTable
 // Source: v2 §4.6
 export const awards = {

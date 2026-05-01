@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+/* ---- Image block ---- */
+
+.imageBlock {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageInner {
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-soft-ink);
+}
+
+/* ---- Metadata block ---- */
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+.eyebrow {
+  color: var(--color-text-muted);
+}
+
+.headline {
+  font-size: var(--font-h5);
+  font-weight: var(--weight-medium);
+  text-transform: none;
+  color: var(--color-text-primary);
+}
+
+.excerpt {
+  color: var(--color-text-secondary);
+}
