@@ -37,6 +37,7 @@
 
   .headlineMobile {
     display: inline;
+    line-height: 1;
   }
 }
 

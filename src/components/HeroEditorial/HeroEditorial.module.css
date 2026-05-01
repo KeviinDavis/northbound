@@ -150,3 +150,47 @@
 .ctaGroup > *:hover .arrow {
   transform: translateX(0.25rem);
 }
+
+@media (max-width: 390px) {
+  .headline {
+    font-size: 2.625rem;
+  }
+
+  .subHeadline {
+    font-size: 1.1rem;
+  }
+
+  .body {
+    font-size: var(--font-body-sm);
+  }
+
+  .ctaLink {
+    font-size: var(--font-body-sm);
+  }
+
+  .eyebrowWrap {
+    margin-bottom: var(--space-6xl);
+  }
+}
+
+@media (max-width: 340px) {
+  .headline {
+    font-size: 2.25rem;
+  }
+
+  .subHeadline {
+    font-size: var(--font-tagline);
+  }
+
+  .body {
+    font-size: var(--font-tagline);
+  }
+
+  .ctaLink {
+    font-size: var(--font-tagline);
+  }
+
+  .eyebrowWrap {
+    margin-bottom: var(--space-5xl);
+  }
+}

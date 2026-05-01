@@ -35,7 +35,7 @@
 .headline {
   font-size: var(--font-h2);
   font-weight: var(--weight-semibold);
-  line-height: var(--leading-tightest);
+  line-height: var(--leading-tight);
 }
 
 .headlineDesktop {

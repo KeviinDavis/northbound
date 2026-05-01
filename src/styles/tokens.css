@@ -59,7 +59,8 @@
   --weight-black:    900;
 
   /* Letter spacing */
-  --tracking-tight:  -0.03em;
+  --tracking-tighest: -0.04em;
+  --tracking-tight:  -0.02em;
   --tracking-wide:   0.05em;
 
   /* Line height */

@@ -68,7 +68,7 @@
   font-weight: var(--weight-semibold);
   color: var(--color-bg-primary);
   text-transform: uppercase;
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: var(--tracking-tightest);
   line-height: var(--leading-tightest);
   white-space: nowrap;
   overflow: hidden;
@@ -202,7 +202,7 @@
   flex-direction: column;
   gap: var(--space-2xs);
   font-size: var(--font-body);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-normal);
 }
 
 @media (max-width: 767px) {
