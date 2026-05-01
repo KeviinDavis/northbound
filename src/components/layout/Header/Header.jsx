@@ -101,31 +101,33 @@ export default function Header({ variant = "default" }) {
     const items = menuItemRefs.current.filter(Boolean);
 
     const links = items.map((el) => el.querySelector("a")).filter(Boolean);
+    const tagP = taglineRef.current?.querySelector("p");
 
     if (menuOpen) {
       hasBeenOpened.current = true;
-      gsap.set(links, { yPercent: -110 });
-      if (taglineRef.current) gsap.set(taglineRef.current, { yPercent: -110 });
 
-      tl.to(
-        bgRef.current,
-        { y: 0, duration: 0.55, ease: "power3.inOut" },
-        0
-      ).to(
-        links,
-        { yPercent: 0, stagger: 0.03, duration: 0.55, ease: "power3.inOut" },
-        0
-      );
-      if (taglineRef.current) {
-        tl.to(
-          taglineRef.current,
-          { yPercent: 0, duration: 0.55, ease: "power3.inOut" },
+      tl.set(links, { visibility: "visible", yPercent: -110 }, 0)
+        .set(tagP ? [tagP] : [], { visibility: "visible", yPercent: -110 }, 0)
+        .to(
+          bgRef.current,
+          { y: 0, duration: 0.55, ease: "power3.inOut" },
           0
+        )
+        .to(
+          links,
+          { yPercent: 0, stagger: 0.03, duration: 0.55, ease: "power3.inOut" },
+          0.25
+        );
+      if (tagP) {
+        tl.to(
+          tagP,
+          { yPercent: 0, duration: 0.55, ease: "power3.inOut" },
+          0.25
         );
       }
     } else if (hasBeenOpened.current) {
-      if (taglineRef.current) {
-        tl.to(taglineRef.current, {
+      if (tagP) {
+        tl.to(tagP, {
           yPercent: -110,
           duration: 0.3,
           ease: "power2.in",
@@ -144,7 +146,8 @@ export default function Header({ variant = "default" }) {
         bgRef.current,
         { y: "-100%", duration: 0.5, ease: "power3.inOut" },
         "-=0.15"
-      );
+      ).set(links, { visibility: "hidden" })
+       .set(tagP ? [tagP] : [], { visibility: "hidden" });
     }
   }, [menuOpen]);
 
@@ -161,7 +164,8 @@ export default function Header({ variant = "default" }) {
           }
         });
         if (bgRef.current) gsap.set(bgRef.current, { clearProps: "all" });
-        if (taglineRef.current) gsap.set(taglineRef.current, { clearProps: "all" });
+        const tagP = taglineRef.current?.querySelector("p");
+        if (tagP) gsap.set(tagP, { clearProps: "all" });
         setMenuOpen(false);
         hasBeenOpened.current = false;
       }

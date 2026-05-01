@@ -83,7 +83,7 @@ p {
 /* Utility: tagline / eyebrow */
 .text-tagline {
   font-size: var(--font-tagline);
-  letter-spacing: var(--tracking-wide);
+  letter-spacing: var(--tracking-tight);
   text-transform: uppercase;
 }
 

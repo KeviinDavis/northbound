@@ -56,8 +56,8 @@
 .logo {
   text-decoration: none;
   color: inherit;
-  font-size: var(--font-body-sm);
-  font-weight: var(--weight-normal);
+  font-size: var(--font-h6);
+  font-weight: var(--weight-medium);
   letter-spacing: var(--tracking-tight);
   line-height: 1;
 }
@@ -278,6 +278,7 @@
     width: 100%;
     justify-content: flex-start;
     color: var(--color-text-primary);
+    visibility: hidden;
   }
 
   .link:hover {
@@ -306,5 +307,7 @@
     letter-spacing: var(--tracking-tight);
     line-height: var(--leading-normal);
     color: var(--color-text-primary);
+    visibility: hidden;
   }
+
 }

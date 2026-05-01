@@ -59,8 +59,8 @@
   --weight-black:    900;
 
   /* Letter spacing */
-  --tracking-tight:  -0.04em;
-  --tracking-wide:   0.08em;
+  --tracking-tight:  -0.03em;
+  --tracking-wide:   0.05em;
 
   /* Line height */
   --leading-tightest: 0.8;
@@ -81,6 +81,13 @@
   --space-6xl:   3.75rem;
   --space-7xl:   4.5rem;
   --space-8xl:   5rem;
+  --space-9xl:   6rem;
+  --space-10xl:  8rem;
+  --space-11xl:  10rem;
+  --space-12xl:  12rem;
+  --space-13xl:  14rem;
+  --space-14xl:  16rem;
+  --space-15xl:  18rem;
 
   /* Border radius */
   --radius-default: 0.25rem;
