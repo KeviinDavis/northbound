@@ -6,29 +6,40 @@
   z-index: var(--z-base);
   background-color: var(--color-ink);
   color: var(--color-bg-primary);
-  padding-inline: var(--space-m);
+  padding: var(--space-5xl) var(--space-m) var(--space-3xl);
 }
 
 @media (min-width: 768px) {
   .root {
-    padding-inline: var(--space-2xl);
+    padding: 0 var(--space-2xl);
   }
 }
 
 .inner {
   max-width: var(--container-max);
   margin-inline: auto;
-  min-height: calc(100vh - 4vw);
   display: flex;
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .inner {
+    min-height: calc(100vh - 4vw);
+  }
+}
+
 .content {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: var(--space-5xl);
+  gap: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex: 1;
+    justify-content: center;
+    gap: var(--space-5xl);
+  }
 }
 
 /* ---- Wordmark ---- */
@@ -36,7 +47,13 @@
 .wordmarkBlock {
   display: flex;
   flex-direction: column;
-  gap: var(--space-m);
+  gap: var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .wordmarkBlock {
+    gap: var(--space-m);
+  }
 }
 
 .wordmarkEyebrow {
@@ -59,7 +76,13 @@
 .body {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4xl);
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .body {
+    gap: var(--space-4xl);
+  }
 }
 
 @media (min-width: 768px) {
@@ -81,14 +104,26 @@
 .ctaColumn {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2xl);
+  gap: var(--space-l);
+}
+
+@media (min-width: 768px) {
+  .ctaColumn {
+    gap: var(--space-2xl);
+  }
 }
 
 .ctaHeadline {
-  font-size: var(--font-h5);
+  font-size: var(--font-h6);
   font-weight: var(--weight-semibold);
   line-height: var(--leading-tight);
   max-width: 20ch;
+}
+
+@media (min-width: 768px) {
+  .ctaHeadline {
+    font-size: var(--font-h5);
+  }
 }
 
 .ctaDesktop {
@@ -128,7 +163,7 @@
 .infoColumns {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2xl);
+  gap: var(--space-l);
 }
 
 @media (min-width: 768px) {
@@ -140,7 +175,7 @@
 .infoStack {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2xl);
+  gap: var(--space-l);
 }
 
 .column {
@@ -159,7 +194,16 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-2xs);
+  gap: 0;
+  font-size: var(--font-body-sm);
+  line-height: var(--leading-tight);
+}
+
+@media (min-width: 768px) {
+  .columnList {
+    gap: var(--space-2xs);
+    font-size: var(--font-body);
+  }
 }
 
 .columnLink {
@@ -171,18 +215,21 @@
 
 .bottomRow {
   border-top: 1px solid var(--color-soft-ink);
-  padding-top: var(--space-2xl);
-  margin-top: auto;
+  padding-top: var(--space-l);
+  margin-top: var(--space-2xl);
   display: flex;
   flex-direction: column;
-  gap: var(--space-s);
+  gap: var(--space-2xs);
 }
 
 @media (min-width: 768px) {
   .bottomRow {
+    padding-top: var(--space-2xl);
+    margin-top: auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: var(--space-s);
   }
 }
 

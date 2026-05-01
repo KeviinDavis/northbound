@@ -1,5 +1,5 @@
 .section {
-  padding-top: 3.25rem;
+  padding-top: var(--space-9xl);
   padding-bottom: 0;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .bodyWrap {
-  margin-bottom: var(--space-4xl);
+  margin-bottom: var(--space-2xl);
 }
 
 @media (min-width: 768px) {
