@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
-import Button from "@/components/ui/Button";
 import Media from "@/components/ui/Media";
 import styles from "./FeaturedProjectFull.module.css";
 
@@ -22,25 +21,31 @@ export default function FeaturedProjectFull({ content }) {
           ) : null}
 
           <div className={styles.content}>
-            <p className={`text-tagline ${styles.eyebrow}`}>
-              FEATURED &middot; {content.year}
-            </p>
-
-            <div className={styles.body}>
-              <h2 className={styles.headline}>{content.name}</h2>
-              <p className={styles.category}>{content.category}</p>
+            <div className={styles.topRow}>
+              <p className={`text-tagline ${styles.eyebrow}`}>
+                FEATURED &middot; {content.year}
+              </p>
+              <Link href={content.cta.href} className={styles.ctaLink}>
+                {content.cta.label}
+              </Link>
             </div>
 
-            <div className={styles.footer}>
-              <p className={styles.caption}>{content.caption}</p>
-              <div className={styles.meta}>
-                <span className={styles.year}>{content.year}</span>
-                <Button as={Link} href={content.cta.href} variant="primary">
-                  {content.cta.label}
-                </Button>
+            <div className={styles.cardFooter}>
+              <div className={styles.cardFooterLeft}>
+                <h2 className={styles.headline}>{content.name}</h2>
+                <p className={styles.caption}>{content.caption}</p>
               </div>
+              <p className={`text-tagline ${styles.category}`}>{content.category}</p>
             </div>
           </div>
+        </div>
+
+        <div className={styles.details}>
+          <p className={`text-tagline ${styles.detailsCategory}`}>{content.category}</p>
+          <p className={styles.detailsCaption}>{content.caption}</p>
+          <Link href={content.cta.href} className={styles.detailsLink}>
+            {content.cta.label}
+          </Link>
         </div>
       </Container>
     </Section>

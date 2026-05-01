@@ -1,5 +1,16 @@
+.section {
+  padding-block: var(--space-5xl);
+}
+
 .root {
   width: 100%;
+  padding-inline: var(--space-m);
+}
+
+@media (min-width: 768px) {
+  .root {
+    padding-inline: var(--space-2xl);
+  }
 }
 
 .eyebrow {
@@ -17,8 +28,14 @@
   font-size: var(--font-display);
   font-weight: var(--weight-semibold);
   line-height: var(--leading-tightest);
-  max-width: 55%;
-  margin-bottom: var(--space-5xl);
+  white-space: pre-line;
+  margin-bottom: var(--space-3xl);
+}
+
+@media (min-width: 768px) {
+  .headline {
+    max-width: 55%;
+  }
 }
 
 .headlineDesktop {
@@ -40,11 +57,11 @@
 }
 
 .subHeadline {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: var(--leading-tight);
   letter-spacing: var(--tracking-tight);
   color: var(--color-text-primary);
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-m);
 }
 
 @media (min-width: 768px) {

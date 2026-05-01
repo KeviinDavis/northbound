@@ -5,7 +5,7 @@
 .card {
   position: relative;
   background-color: var(--color-soft-ink);
-  min-height: 70vh;
+  min-height: 55vh;
   overflow: hidden;
 }
 
@@ -20,47 +20,108 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
-  min-height: 70vh;
-  padding: var(--space-5xl) var(--space-2xl);
+  min-height: 55vh;
+  padding: var(--space-3xl) var(--space-xl);
   color: var(--color-bg-primary);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .eyebrow {
   color: var(--color-bg-primary);
 }
 
-.body {
+.ctaLink {
+  display: none;
+}
+
+.cardFooter {
   margin-top: auto;
 }
 
 .headline {
-  font-size: var(--font-h1);
-  font-weight: var(--weight-black);
-}
-
-.category {
-  font-size: var(--font-body-sm);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
-  margin-top: var(--space-m);
-}
-
-.footer {
-  margin-top: auto;
+  font-size: var(--font-h2);
+  font-weight: var(--weight-semibold);
 }
 
 .caption {
-  max-width: var(--container-narrow);
-  margin-bottom: var(--space-xl);
+  display: none;
 }
 
-.meta {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xl);
+.category {
+  display: none;
 }
 
-.year {
-  font-size: var(--font-body-sm);
-  letter-spacing: var(--tracking-wide);
+/* Mobile details below card */
+.details {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xs);
 }
+
+.detailsCategory {
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.detailsCaption {
+  margin-bottom: var(--space-l);
+}
+
+.detailsLink {
+  font-size: var(--font-btn);
+  font-weight: var(--weight-medium);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  color: var(--color-text-primary);
+}
+
+/* ---- Desktop ---- */
+@media (min-width: 768px) {
+  .card {
+    min-height: 70vh;
+  }
+
+  .content {
+    min-height: 70vh;
+    padding: var(--space-5xl) var(--space-2xl);
+  }
+
+  .ctaLink {
+    display: inline;
+    font-size: var(--font-body-sm);
+    font-weight: var(--weight-medium);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    color: var(--color-bg-primary);
+  }
+
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .headline {
+    margin-bottom: var(--space-m);
+  }
+
+  .caption {
+    display: block;
+    max-width: var(--container-narrow);
+  }
+
+  .category {
+    display: block;
+    color: var(--color-muted);
+    flex-shrink: 0;
+  }
+
+  .details {
+    display: none;
+  }
+}
+

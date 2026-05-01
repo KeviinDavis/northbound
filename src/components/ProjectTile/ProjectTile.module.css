@@ -1,0 +1,74 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+/* ---- Image block ---- */
+
+.imageBlock {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageInner {
+  height: 55vh;
+  background-color: var(--color-soft-ink);
+  transition: transform var(--transition-base);
+}
+
+@media (min-width: 960px) {
+  .imageInner {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.portrait {
+  aspect-ratio: 4 / 5;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .root:hover .imageInner {
+    transform: scale(1.03);
+  }
+}
+
+.name {
+  position: absolute;
+  bottom: var(--space-2xl);
+  left: var(--space-2xl);
+  font-weight: var(--weight-semibold);
+  color: var(--color-bg-primary);
+  max-width: 65%;
+}
+
+.year {
+  position: absolute;
+  bottom: var(--space-2xl);
+  right: var(--space-2xl);
+  color: var(--color-bg-primary);
+}
+
+/* ---- Metadata block ---- */
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+.category {
+  color: var(--color-text-muted);
+}
+
+.caption {
+  color: var(--color-text-primary);
+}
+
+.cta {
+  font-weight: var(--weight-medium);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  color: var(--color-text-primary);
+}

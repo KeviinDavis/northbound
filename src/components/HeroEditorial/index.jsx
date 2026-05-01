@@ -1,15 +1,12 @@
 import Link from "next/link";
 import Section from "@/components/layout/Section";
-import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import styles from "./HeroEditorial.module.css";
 
 export default function HeroEditorial({ content }) {
   return (
-    <Section variant="hero">
-      <div aria-hidden="true" />
-      <Container variant="default">
-        <header className={styles.root}>
+    <Section className={styles.section}>
+      <header className={styles.root}>
           <p className={`text-tagline ${styles.eyebrow}`}>
             {content.eyebrow}
           </p>
@@ -33,8 +30,7 @@ export default function HeroEditorial({ content }) {
               </Link>
             </div>
           </div>
-        </header>
-      </Container>
+      </header>
     </Section>
   );
 }

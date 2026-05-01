@@ -13,8 +13,8 @@
 export const hero = {
   eyebrow: "NORTHBOUND ® · PORTLAND, OREGON · EST. 2019",
   headline: {
-    desktop: "BUILT, USED AND BRANDED.",
-    mobile: "BUILT, USED AND BRANDED.",
+    desktop: "BUILT,\nUSED AND\nBRANDED.",
+    mobile: "BUILT,\nUSED AND\nBRANDED.",
   },
   subHeadline: "A design studio for the outdoors.",
   body: "Working with gear companies, apparel labels, guide services, and the people who make them. Branding, identity, and digital \u2014 that\u2019s the whole offer.",
