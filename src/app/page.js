@@ -32,6 +32,11 @@ export default function Home() {
           <AwardsTable content={awards} />
         </Container>
       </Section>
+      <Section>
+        <Container>
+          <JournalPreviewGrid content={journalPreview} />
+        </Container>
+      </Section>
     </>
   );
 }
