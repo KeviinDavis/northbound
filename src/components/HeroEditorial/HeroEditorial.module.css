@@ -26,12 +26,12 @@
 }
 
 .eyebrowWrap {
-  margin-bottom: var(--space-5xl);;
+  margin-bottom: var(--space-2xl);
 }
 
 @media (min-width: 768px) {
   .eyebrowWrap {
-    margin-bottom: var(--space-8xl);
+    margin-bottom: var(--space-2xl);
   }
 }
 
