@@ -8,8 +8,8 @@
 export const pageHeader = {
   eyebrow: '05 \u00B7 JOURNAL',
   headline: {
-    desktop: 'NOTES FROM THE STUDIO. ESSAYS, CASE NOTES, AND THE OCCASIONAL OPINION.',
-    mobile: 'NOTES FROM THE STUDIO.',
+    desktop: 'STUDIO JOURNAL ',
+    mobile: 'STUDIO JOURNAL',
   },
   subParagraph:
     'Long-form writing about brand, the outdoors, and the work of building one inside the other. Published when there\u2019s something worth saying.',

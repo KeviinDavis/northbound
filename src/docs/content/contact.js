@@ -12,7 +12,7 @@ export const pageHeader = {
     mobile: 'TELL US ABOUT THE PROJECT.',
   },
   subParagraph:
-    'Northbound takes on roughly twelve projects a year. If you\u2019re working on something in the outdoors \u2014 a brand, a relaunch, a digital build \u2014 we\u2019d like to hear about it.',
+    'If you\u2019re working on something in the outdoors \u2014 a brand, a relaunch, a digital build \u2014 we\u2019d like to hear about it.',
 }
 
 // Component: ContactFormBlock

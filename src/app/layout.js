@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Footer from "@/components/layout/Footer";
+import PageWipeTransition from "@/components/PageWipeTransition";
 import "./globals.css";
 
 // ─── FONT — swap this out per project ───────────────────────
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         </a>
         <main id="main">{children}</main>
         <Footer variant="light"/>
+        <PageWipeTransition />
       </body>
     </html>
   );

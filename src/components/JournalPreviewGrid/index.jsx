@@ -7,26 +7,28 @@ export default function JournalPreviewGrid({ content }) {
 
   return (
     <div className={styles.root}>
-      <div className={styles.header}>
-        <p className={`text-tagline ${styles.eyebrow}`}>
-          &mdash; {content.eyebrow}
-        </p>
-        <div className={styles.headlineRow}>
-          <h2 className={styles.headline}>
-            <span className={styles.headlineDesktop}>
-              {content.headline.desktop}
-            </span>
-            <span className={styles.headlineMobile}>
-              {content.headline.mobile}
-            </span>
-          </h2>
-          {cta && (
-            <Link href={cta.href} className={styles.cta}>
-              {cta.label.replace(" →", "")} <span className={styles.arrow}>&rarr;</span>
-            </Link>
-          )}
+      {content.eyebrow && (
+        <div className={styles.header}>
+          <p className={`text-tagline ${styles.eyebrow}`}>
+            &mdash; {content.eyebrow}
+          </p>
+          <div className={styles.headlineRow}>
+            <h2 className={styles.headline}>
+              <span className={styles.headlineDesktop}>
+                {content.headline.desktop}
+              </span>
+              <span className={styles.headlineMobile}>
+                {content.headline.mobile}
+              </span>
+            </h2>
+            {cta && (
+              <Link href={cta.href} className={styles.cta}>
+                {cta.label.replace(" →", "")} <span className={styles.arrow}>&rarr;</span>
+              </Link>
+            )}
+          </div>
         </div>
-      </div>
+      )}
 
       <div className={`${styles.grid} ${styles[`cols${cols}`]}`}>
         {articles.map((article) => (
