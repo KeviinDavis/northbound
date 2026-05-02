@@ -1,0 +1,138 @@
+.block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* ---- Visual area ---- */
+
+.visualWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.imageWrap img {
+  object-fit: cover;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-soft-ink);
+}
+
+/* Video overlay — hidden until hover */
+.videoWrap {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.videoWrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- Hover effects (pointer devices only) ---- */
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .imageWrap img {
+    transition: transform 0.6s ease;
+  }
+
+  .block:hover .imageWrap img {
+    transform: scale(1.03);
+  }
+
+  .block:hover .videoWrap {
+    opacity: 1;
+  }
+}
+
+/* ---- Info area ---- */
+
+.infoWrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-s) 0 var(--space-l);
+  border-top: 1px solid var(--color-stroke);
+}
+
+/* ---- Tags ---- */
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tagItem {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tag {
+  font-size: var(--font-tagline);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.tagDash {
+  font-size: var(--font-tagline);
+  color: var(--color-text-muted);
+  margin-inline: var(--space-2xs);
+}
+
+
+/* ---- Project name ---- */
+
+.nameWrap {
+  overflow: hidden;
+}
+
+.name {
+  font-size: var(--font-h4);
+}
+
+/* ---- Border decoration ---- */
+
+.borderDecor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  pointer-events: none;
+}
+
+.borderLine {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-stroke);
+}
+
+/* ---- Mobile ---- */
+
+@media (max-width: 480px) {
+  .imageWrap {
+    aspect-ratio: auto;
+    height: 45vh;
+  }
+
+  .infoWrap {
+    padding: var(--space-s) 0 var(--space-m);
+  }
+}

@@ -1,0 +1,47 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-l);
+}
+
+.clip {
+  display: block;
+  overflow: hidden;
+}
+
+.title {
+  position: relative;
+  font-size: var(--font-h1);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-tight);
+  line-height: 1;
+}
+
+.titleInner {
+  display: block;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-stroke-solid);
+  border-radius: 100px;
+  padding: clamp(var(--space-2xs), 0.5vw, var(--space-2xs));
+}
+
+.toggleBtn {
+  padding: var(--space-xs) var(--space-l);
+  font-size: var(--font-tagline);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  cursor: pointer;
+  border-radius: 100px;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+.active {
+  background-color: var(--color-ink);
+  color: var(--color-bone);
+}
