@@ -102,6 +102,7 @@ export const beliefs = {
 // §7.5 — Three columns on desktop, stacked on mobile. Reads like a colophon.
 export const studioColophon = {
   eyebrow: 'STUDIO',
+  headline: 'STUDIO INFORMATION.',
   location: {
     label: 'LOCATION',
     lines: [

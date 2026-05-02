@@ -1,0 +1,56 @@
+/* StudioInfoBlock — desktop-first */
+
+/* Section header */
+.header {
+  margin-bottom: var(--space-3xl);
+}
+
+.headline {
+  font-weight: var(--weight-bold);
+}
+
+/* Columns — desktop: 3-col grid */
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: var(--space-4xl);
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-stroke);
+  padding-top: var(--space-3xl);
+}
+
+/* Per info block */
+.block {
+  padding: 0;
+  max-width: 24rem;
+}
+
+.label {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-l);
+}
+
+.line {
+  font-size: var(--font-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile: single-column stack */
+@media (max-width: 767px) {
+  .columns {
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .block {
+    border-top: 1px solid var(--color-stroke);
+    padding-block: var(--space-3xl);
+    max-width: none;
+  }
+}

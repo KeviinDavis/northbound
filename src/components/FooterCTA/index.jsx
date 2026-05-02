@@ -4,9 +4,9 @@ import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import styles from "./FooterCTA.module.css";
 
-export default function FooterCTA({ footerCTA, email }) {
+export default function FooterCTA({ footerCTA, email, variant = "default" }) {
   return (
-    <Section variant="default">
+    <Section variant={variant}>
       <Container>
         <div className={styles.block}>
           <p className={`text-tagline ${styles.eyebrow}`}>

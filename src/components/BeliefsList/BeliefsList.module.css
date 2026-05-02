@@ -1,0 +1,99 @@
+/* BeliefsList — desktop-first */
+
+/* Section header */
+.header {
+  margin-bottom: var(--space-3xl);
+}
+
+.eyebrow {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+}
+
+.headlineDesktop {
+  font-weight: var(--weight-semibold);
+}
+
+.headlineMobile {
+  display: none;
+  font-weight: var(--weight-semibold);
+}
+
+/* Beliefs list */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.belief {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: var(--space-2xl);
+  padding-block: var(--space-3xl);
+  border-top: 1px solid var(--color-stroke);
+}
+
+.belief:last-child {
+  border-bottom: 1px solid var(--color-stroke);
+}
+
+.number {
+  color: var(--color-text-muted);
+}
+
+.titleDesktop {
+  font-size: var(--font-h5);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-l);
+}
+
+.titleMobile {
+  display: none;
+  font-size: var(--font-h6);
+  font-weight: var(--weight-semibold);
+}
+
+.body {
+  font-size: var(--font-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+  /* Readable measure — constrains line length for comfortable reading */
+  max-width: 36rem;
+}
+
+/* Tablet / mobile: single-column stack */
+@media (max-width: 1023px) {
+  .belief {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number {
+    display: none;
+  }
+
+  .titleDesktop {
+    display: none;
+  }
+
+  .titleMobile {
+    display: block;
+    margin-bottom: var(--space-l);
+  }
+
+  .body {
+    max-width: none;
+  }
+}
+
+/* Headline swap */
+@media (max-width: 767px) {
+  .headlineDesktop {
+    display: none;
+  }
+
+  .headlineMobile {
+    display: block;
+  }
+}

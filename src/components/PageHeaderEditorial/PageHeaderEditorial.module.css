@@ -46,6 +46,10 @@
   max-width: 32rem;
 }
 
+.flush {
+  padding-top: 0;
+}
+
 @media (max-width: 767px) {
   .headlineMobile {
     display: block;
