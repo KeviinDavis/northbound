@@ -17,10 +17,12 @@
 
 .headlineMobile {
   display: block;
+  font-weight: var(--weight-medium);
 }
 
 .headlineDesktop {
   display: none;
+  font-weight: var(--weight-semibold);
   letter-spacing: -.08em;
 }
 

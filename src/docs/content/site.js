@@ -35,6 +35,7 @@ export const nav = {
 export const footerCTA = {
   // Global component. Sits above SiteFooter on every page EXCEPT Contact.
   // Locked headline — preserved across versions.
+  eyebrow: 'Let\u2019s work',
   headline: {
     desktop: 'We would love to hear from you. Let\u2019s work \u2014 together.',
     mobile: 'We would love to hear from you. Let\u2019s work \u2014 together.',

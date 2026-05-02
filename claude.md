@@ -109,6 +109,7 @@ Never hardcode visual values.
 BREAKPOINT POLICY
 ------------------------------------------------------------
 
+• Desktop-first: base styles target desktop, use max-width media queries to adapt down.
 • Structural breakpoints may mirror Webflow layout behavior.
 • Typography and spacing should remain fluid using clamp().
 • Do not invent new breakpoints.

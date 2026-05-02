@@ -6,7 +6,13 @@
 
 // Component: PageHeaderEditorial
 export const pageHeader = {
-  eyebrow: '03 \u00B7 SERVICES',
+  eyebrow: {
+    left: '03 \u00B7 SERVICES',
+    right: {
+      desktop: 'THREE PRACTICES \u00B7 ONE INDUSTRY',
+      mobile: 'THREE PRACTICES',
+    },
+  },
   headline: {
     desktop: 'BRANDING, IDENTITY, AND DIGITAL FOR THE OUTDOORS. THAT\u2019S THE OFFER.',
     mobile: 'BRANDING, IDENTITY, AND DIGITAL FOR THE OUTDOORS.',
