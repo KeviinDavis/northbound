@@ -82,6 +82,7 @@ export const studioInfo = {
 // Component: TextBlockNarrow
 // §9.3 — Quiet send-off below the form.
 export const closingNote = {
+  eyebrow: 'NEXT',
   headline: {
     desktop: 'What happens next.',
     mobile: 'What happens next.',

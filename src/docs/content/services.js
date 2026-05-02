@@ -14,8 +14,8 @@ export const pageHeader = {
     },
   },
   headline: {
-    desktop: 'DIGITAL BRANDING, AND IDENTITY FOR THE OUTDOORS.',
-    mobile: 'DIGITAL BRANDING, AND IDENTITY FOR THE OUTDOORS.',
+    desktop: 'DIGITAL BRANDING,AND IDENTITY FOR THE OUTDOORS.',
+    mobile: 'DIGITAL BRANDING,\nAND IDENTITY\nFOR THE OUTDOORS',
   },
   subParagraph:
     'Northbound runs a small offer on purpose. Three core practices, applied to one kind of client. Every engagement starts with the brand and ends with the build.',
@@ -120,6 +120,7 @@ export const process = {
 // Component: TextBlockNarrow
 // §6.6
 export const engagementNote = {
+  eyebrow: 'ON ENGAGEMENTS',
   headline: {
     desktop: 'A note on engagements.',
     mobile: 'A note on engagements.',

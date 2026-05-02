@@ -1,0 +1,122 @@
+/* ProcessSection — desktop-first */
+
+/* Section header */
+.header {
+  margin-bottom: var(--space-3xl);
+}
+
+.eyebrow {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+}
+
+.headlineDesktop {
+  max-width: 66%;
+  font-weight: var(--weight-semibold)
+}
+
+.headlineMobile {
+  display: none;
+  font-weight: var(--weight-semibold)
+}
+
+/* Phases grid — desktop: 4 equal columns, no gap */
+.phases {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Per-phase card — desktop */
+.phase {
+  padding: var(--space-2xl);
+  border-top: 1px solid var(--color-stroke);
+  border-bottom: 1px solid var(--color-stroke);
+  border-right: 1px solid var(--color-stroke);
+}
+
+.phase:first-child {
+  border-left: 1px solid var(--color-stroke);
+}
+
+/* Desktop: show number, hide combined eyebrow */
+.phaseNumber {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2xl);
+}
+
+.phaseEyebrow {
+  display: none;
+  color: var(--color-text-muted);
+}
+
+.phaseTitle {
+  font-size: var(--font-h5);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tighest);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-l);
+}
+
+.phaseBody {
+  font-size: var(--font-body-sm);
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+}
+
+/* Tablet / mobile: single column stack */
+@media (max-width: 1023px) {
+  .headlineDesktop {
+    max-width: 100%;
+  }
+
+  .phases {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phase {
+    padding: var(--space-3xl) 0;
+    border-top: 1px solid var(--color-stroke);
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .phase:first-child {
+    border-left: none;
+  }
+
+  .phase:last-child {
+    border-bottom: 1px solid var(--color-stroke);
+  }
+
+  /* Mobile: show combined eyebrow, hide standalone number */
+  .phaseEyebrow {
+    display: block;
+    margin-bottom: var(--space-s);
+  }
+
+  .phaseNumber {
+    display: none;
+  }
+
+  /* Add trailing period on mobile via ::after */
+  .phaseTitle::after {
+    content: '.';
+  }
+}
+
+/* Headline swap */
+@media (max-width: 767px) {
+  .headlineDesktop {
+    display: none;
+  }
+
+  .headlineMobile {
+    display: block;
+  }
+}

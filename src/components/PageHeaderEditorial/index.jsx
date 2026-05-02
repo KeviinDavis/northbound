@@ -1,34 +1,63 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import Section from '@/components/layout/Section';
 import Container from '@/components/layout/Container';
 import styles from './PageHeaderEditorial.module.css';
 
 export default function PageHeaderEditorial({ pageHeader }) {
+  const linesRef = useRef([]);
+
+  useEffect(() => {
+    const els = linesRef.current.filter(
+      (el) => el && el.offsetParent !== null
+    );
+    gsap.set(els, { yPercent: 110 });
+    gsap.to(els, {
+      yPercent: 0,
+      duration: 0.9,
+      ease: "power3.out",
+      stagger: 0.08,
+      delay: 0.4,
+    });
+  }, []);
+
+  const addRef = (el) => {
+    if (el && !linesRef.current.includes(el)) {
+      linesRef.current.push(el);
+    }
+  };
+
+  const desktopLines = pageHeader.headline.desktop.split("\n");
+  const mobileLines = pageHeader.headline.mobile.split("\n");
+
   return (
     <Section variant="default">
       <Container variant="default">
         <header className={styles.header}>
-          <div className={`text-tagline ${styles.eyebrow}`}>
-            <span>{pageHeader.eyebrow.left}</span>
-            {pageHeader.eyebrow.right && (
-              <span>
-                <span className={styles.eyebrowRightDesktop}>
-                  {pageHeader.eyebrow.right.desktop}
-                </span>
-                <span className={styles.eyebrowRightMobile}>
-                  {pageHeader.eyebrow.right.mobile}
+          <h2 className={styles.headlineMobile}>
+            {mobileLines.map((line, i) => (
+              <span key={i} className={styles.clip}>
+                <span ref={addRef} className={styles.headlineLine}>
+                  {line}
                 </span>
               </span>
-            )}
-          </div>
-
-          <h1 className={styles.headlineMobile}>
-            {pageHeader.headline.mobile}
-          </h1>
+            ))}
+          </h2>
           <h1 className={styles.headlineDesktop}>
-            {pageHeader.headline.desktop}
+            {desktopLines.map((line, i) => (
+              <span key={i} className={styles.clip}>
+                <span ref={addRef} className={styles.headlineLine}>
+                  {line}
+                </span>
+              </span>
+            ))}
           </h1>
 
-          <p className={styles.subParagraph}>{pageHeader.subParagraph}</p>
+          <div className={styles.clip}>
+            <p ref={addRef} className={styles.subParagraph}>{pageHeader.subParagraph}</p>
+          </div>
         </header>
       </Container>
     </Section>

@@ -1,28 +1,41 @@
+.clip {
+  display: block;
+  overflow: hidden;
+}
+
+.eyebrowWrap {
+  margin-bottom: var(--space-3xl);
+}
+
 .eyebrow {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   color: var(--color-text-secondary);
   letter-spacing: var(--tracking-tight);
-  margin-bottom: var(--space-3xl);
 }
 
 .eyebrowRightMobile {
-  display: inline;
+  display: none;
 }
 
 .eyebrowRightDesktop {
-  display: none;
+  display: inline;
+}
+
+.headlineLine {
+  display: block;
 }
 
 .headlineMobile {
-  display: block;
+  display: none;
+  font-size: clamp(2rem, calc(1.62rem + 4vw), 4rem);
   font-weight: var(--weight-semibold);
-  letter-spacing: -.08em;
 }
 
 .headlineDesktop {
-  display: none;
+  display: block;
+  font-size: clamp(2.5rem, calc(1.62rem + 3.76vw), 5rem);
   font-weight: var(--weight-semibold);
   letter-spacing: -.08em;
 }
@@ -30,27 +43,19 @@
 .subParagraph {
   margin-top: var(--space-2xl);
   color: var(--color-text-primary);
+  max-width: 32rem;
 }
 
-@media (min-width: 768px) {
-  .eyebrowRightMobile {
-    display: none;
-  }
-
-  .eyebrowRightDesktop {
-    display: inline;
-  }
-
+@media (max-width: 767px) {
   .headlineMobile {
-    display: none;
+    display: block;
   }
 
   .headlineDesktop {
-    display: block;
-    max-width: 85%;
+    display: none;
   }
 
   .subParagraph {
-    max-width: 32rem;
+    max-width: none;
   }
 }

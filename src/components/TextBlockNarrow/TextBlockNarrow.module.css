@@ -1,0 +1,39 @@
+/* TextBlockNarrow — centered quiet text block */
+
+.block {
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+}
+
+.headlineDesktop {
+  font-size: var(--font-h3);
+  margin-bottom: var(--space-l);
+  font-weight: var(--weight-semibold)
+}
+
+.headlineMobile {
+  display: none;
+  font-size: var(--font-h3);
+  margin-bottom: var(--space-l);
+  font-weight: var(--weight-semibold)
+}
+
+.body {
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+}
+
+/* Headline swap */
+@media (max-width: 767px) {
+  .headlineDesktop {
+    display: none;
+  }
+
+  .headlineMobile {
+    display: block;
+  }
+}

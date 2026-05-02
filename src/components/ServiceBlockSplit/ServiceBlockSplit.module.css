@@ -36,11 +36,13 @@
 
 .headlineDesktop {
   margin-bottom: var(--space-l);
+  font-weight: var(--weight-semibold)
 }
 
 .headlineMobile {
   display: none;
   margin-bottom: var(--space-l);
+  font-weight: var(--weight-semibold)
 }
 
 .body {
@@ -98,8 +100,12 @@
     order: unset;
   }
 
+  .imageColumn {
+    width: 100%;
+  }
+
   .placeholder {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 1 / 1;
   }
 }
 
