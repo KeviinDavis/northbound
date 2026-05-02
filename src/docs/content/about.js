@@ -15,8 +15,8 @@ export const pageHeader = {
     },
   },
   headline: {
-    desktop: 'A STUDIO FOR\nONE INDUSTRY.\nTHE OUTDOORS.',
-    mobile: 'A STUDIO\nFOR ONE\nINDUSTRY.\nTHE OUTDOORS.',
+    desktop: 'A STUDIO FOR ONE INDUSTRY.\nTHE OUTDOORS.',
+    mobile: 'THE ONE STUDIO FOR\nTHE OUTDOORS.',
   },
   subParagraph:
     'Northbound is a Portland design studio working with outdoor companies. We started in 2019 with a narrow idea \u2014 design for one industry, and only that industry \u2014 and seven years in, the thesis has held.',

@@ -1,0 +1,44 @@
+/* LongFormSection — editorial long-form prose block */
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+}
+
+.headlineDesktop {
+  font-size: var(--font-h2);
+  margin-bottom: var(--space-3xl);
+  font-weight: var(--weight-semibold)
+}
+
+.headlineMobile {
+  display: none;
+  font-size: var(--font-h3);
+  margin-bottom: var(--space-3xl);
+  font-weight: var(--weight-semibold)
+}
+
+.body {
+  color: var(--color-text-primary);
+  line-height: var(--leading-normal);
+}
+
+.body p + p {
+  margin-top: var(--space-l);
+}
+
+/* Headline swap */
+@media (max-width: 767px) {
+  .headlineDesktop {
+    display: none;
+  }
+
+  .headlineMobile {
+    display: block;
+  }
+}

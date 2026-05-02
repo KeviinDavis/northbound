@@ -10,6 +10,10 @@
   background-color: var(--color-bg-secondary);
 }
 
+.muted {
+  background-color: var(--color-muted);
+}
+
 .hero {
   position: relative;
   padding-block: 0;

@@ -16,6 +16,10 @@
   transform: translateY(-100%);
 }
 
+.muted {
+  background-color: var(--color-muted);
+}
+
 /* ── Grid ─────────────────────────────────────────── */
 
 .grid {

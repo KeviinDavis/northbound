@@ -43,6 +43,14 @@
   .imageLeft .imageBlock {
     order: unset;
   }
+
+  .mobileImageFirst .imageBlock {
+    order: -1;
+  }
+
+  .mobileImageFirst .copy {
+    order: unset;
+  }
 }
 
 /* ---- Image block ---- */

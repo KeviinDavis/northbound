@@ -248,7 +248,7 @@
 /* ---- Light variant ---- */
 
 .light {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-bg-secondary);
   color: var(--color-text-primary);
 }
 

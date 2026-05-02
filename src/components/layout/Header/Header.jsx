@@ -182,6 +182,7 @@ export default function Header({ variant = "default" }) {
 
   const headerClass = [
     styles.header,
+    variant !== "default" ? styles[variant] : "",
     hidden && !menuOpen ? styles.hidden : "",
   ]
     .filter(Boolean)

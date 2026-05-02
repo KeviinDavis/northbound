@@ -20,6 +20,7 @@
 
 .titleInner {
   display: block;
+  font-weight: var(--weight-semibold)
 }
 
 .toggle {

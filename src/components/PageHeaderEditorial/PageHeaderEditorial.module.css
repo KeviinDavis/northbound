@@ -30,7 +30,7 @@
 .headlineMobile {
   display: none;
   font-size: clamp(2rem, calc(1.62rem + 4vw), 4rem);
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-semibold)
 }
 
 .headlineDesktop {
@@ -57,5 +57,11 @@
 
   .subParagraph {
     max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .headlineMobile {
+    font-size: var(--font-h3);
   }
 }

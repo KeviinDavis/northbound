@@ -6,7 +6,7 @@ import Section from '@/components/layout/Section';
 import Container from '@/components/layout/Container';
 import styles from './PageHeaderEditorial.module.css';
 
-export default function PageHeaderEditorial({ pageHeader }) {
+export default function PageHeaderEditorial({ pageHeader, sectionVariant = "default" }) {
   const linesRef = useRef([]);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function PageHeaderEditorial({ pageHeader }) {
   const mobileLines = pageHeader.headline.mobile.split("\n");
 
   return (
-    <Section variant="default">
+    <Section variant={sectionVariant}>
       <Container variant="default">
         <header className={styles.header}>
           <h2 className={styles.headlineMobile}>

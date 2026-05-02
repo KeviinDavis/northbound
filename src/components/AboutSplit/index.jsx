@@ -4,9 +4,10 @@ import styles from "./AboutSplit.module.css";
 
 export default function AboutSplit({ content }) {
   const imageRight = content.imageSide !== "left";
+  const mobileImageFirst = content.mobileImageFirst;
 
   return (
-    <div className={`${styles.grid} ${imageRight ? styles.imageRight : styles.imageLeft}`}>
+    <div className={`${styles.grid} ${imageRight ? styles.imageRight : styles.imageLeft} ${mobileImageFirst ? styles.mobileImageFirst : ""}`}>
       <div className={styles.imageBlock}>
         {content.image ? (
           <Media
