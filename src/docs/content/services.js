@@ -14,8 +14,8 @@ export const pageHeader = {
     },
   },
   headline: {
-    desktop: 'BRANDING, IDENTITY, AND DIGITAL FOR THE OUTDOORS. THAT\u2019S THE OFFER.',
-    mobile: 'BRANDING, IDENTITY, AND DIGITAL FOR THE OUTDOORS.',
+    desktop: 'DIGITAL BRANDING, AND IDENTITY FOR THE OUTDOORS.',
+    mobile: 'DIGITAL BRANDING, AND IDENTITY FOR THE OUTDOORS.',
   },
   subParagraph:
     'Northbound runs a small offer on purpose. Three core practices, applied to one kind of client. Every engagement starts with the brand and ends with the build.',

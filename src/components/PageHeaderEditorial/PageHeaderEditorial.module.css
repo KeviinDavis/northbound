@@ -17,7 +17,8 @@
 
 .headlineMobile {
   display: block;
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -.08em;
 }
 
 .headlineDesktop {
@@ -46,6 +47,7 @@
 
   .headlineDesktop {
     display: block;
+    max-width: 85%;
   }
 
   .subParagraph {
