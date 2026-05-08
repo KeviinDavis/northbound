@@ -134,35 +134,52 @@
 }
 
 /* ============================================================
-   Section 08 — Full-bleed Insight (Customer)
+   Section 08 — Offset Insight (Customer)
    ============================================================ */
 
-.insightHeadlineDesktop {
-  display: none;
-  margin: 0 0 var(--space-l) 0;
-}
-
-.insightHeadlineMobile {
-  display: block;
-  margin: 0 0 var(--space-l) 0;
+.offsetTextBlock {
+  padding-left: 0;
+  margin-bottom: var(--space-3xl);
 }
 
 @media (min-width: 768px) {
-  .insightHeadlineDesktop {
-    display: block;
-  }
-
-  .insightHeadlineMobile {
-    display: none;
+  .offsetTextBlock {
+    padding-left: 35%;
   }
 }
 
-.insightBody {
+.offsetLabel {
+  font-size: var(--font-tagline);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  font-weight: var(--weight-medium);
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-s) 0;
+}
+
+.offsetBody {
+  font-size: var(--font-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+  max-width: 40rem;
   margin: 0;
 }
 
-.fullBleedMedia {
-  margin-top: var(--space-2xl);
+.offsetTextBlockLeft {
+  margin-bottom: var(--space-3xl);
+  max-width: 25rem;
+}
+
+.imagePairGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-l);
+}
+
+@media (min-width: 768px) {
+  .imagePairGrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* ============================================================

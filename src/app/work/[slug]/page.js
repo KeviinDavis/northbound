@@ -7,7 +7,6 @@ import Media from "@/components/ui/Media";
 import ProjectMeta from "@/components/ProjectMeta";
 import MediaGrid from "@/components/MediaGrid";
 import FooterCTA from "@/components/FooterCTA";
-import SplitInsight from "./_components/SplitInsight";
 import { footerCTA, footer } from "@/docs/content/site";
 import styles from "./page.module.css";
 
@@ -120,66 +119,64 @@ export default async function ProjectPage({ params }) {
         </Container>
       </Section>
 
-      {/* Section 08 — Insight 03 · Customer (full-bleed) */}
+      {/* Section 08 — Insight 03 · Customer */}
       <Section variant="default">
         <Container variant="default">
-          <h2 className={styles.insightHeadlineDesktop}>
-            {project.insights[2].headline.desktop}
-          </h2>
-          <h2 className={styles.insightHeadlineMobile}>
-            {project.insights[2].headline.mobile}
-          </h2>
-          <p className={styles.insightBody}>{project.insights[2].body}</p>
+          <div className={styles.offsetTextBlock}>
+            <p className={styles.offsetLabel}>{project.insight.eyebrow}</p>
+            <p className={styles.offsetBody}>{project.insight.body}</p>
+          </div>
+          <div className={styles.imagePairGrid}>
+            <Media
+              type="image"
+              src={project.insight.mediaPair[0].src}
+              alt={project.insight.mediaPair[0].alt}
+              fill
+              aspectRatio="3/4"
+            />
+            <Media
+              type="image"
+              src={project.insight.mediaPair[1].src}
+              alt={project.insight.mediaPair[1].alt}
+              fill
+              aspectRatio="3/4"
+            />
+          </div>
         </Container>
-        <div className={styles.fullBleedMedia}>
+      </Section>
+
+      {/* Section 10 — Identity Hero Pair */}
+      <Section variant="default">
+        <Container variant="default">
           <Media
             type="image"
-            src={project.insights[2].media.src}
-            alt={project.insights[2].media.alt}
+            src={project.heroPair[0].src}
+            alt={project.heroPair[0].alt}
             fill
             aspectRatio="16/9"
           />
-        </div>
-      </Section>
-
-      {/* Section 09 — Pull Quote */}
-      <Section variant="default">
-        <Container variant="narrow">
-          <p className={styles.pullQuote}>{project.pullQuote.body}</p>
         </Container>
       </Section>
 
-      {/* Section 10 — Identity Showcase */}
-      <Section variant="secondary">
+      <Section variant="default" className={styles.heroSection}>
         <Container variant="default">
-          <h2 className={styles.sectionHeadlineDesktop}>
-            {project.identityShowcase.headline.desktop}
-          </h2>
-          <h2 className={styles.sectionHeadlineMobile}>
-            {project.identityShowcase.headline.mobile}
-          </h2>
-          <MediaGrid
-            cols={project.identityShowcase.cols}
-            items={project.identityShowcase.items}
+          <Media
+            type="image"
+            src={project.heroPair[1].src}
+            alt={project.heroPair[1].alt}
+            fill
+            aspectRatio="16/9"
           />
         </Container>
       </Section>
 
-      {/* Section 11 — Insight 04 · Voice */}
-      <SplitInsight insight={project.insights[3]} />
-
-      {/* Section 12 — Insight 05 · Craft */}
-      <SplitInsight insight={project.insights[4]} />
-
-      {/* Section 13 — Range */}
+      {/* Section 11 — Range */}
       <Section variant="default">
         <Container variant="default">
-          <h2 className={styles.sectionHeadlineDesktop}>
-            {project.range.headline.desktop}
-          </h2>
-          <h2 className={styles.sectionHeadlineMobile}>
-            {project.range.headline.mobile}
-          </h2>
+          <div className={styles.offsetTextBlockLeft}>
+            <p className={styles.offsetLabel}>{project.range.eyebrow}</p>
+            <p className={styles.offsetBody}>{project.range.body}</p>
+          </div>
           <MediaGrid
             cols={project.range.cols}
             items={project.range.items}

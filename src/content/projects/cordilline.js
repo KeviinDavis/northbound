@@ -34,131 +34,44 @@ export const project = {
 
   imagePair: [
     {
-      src: "/images/work/Cordilline/CordillineFeature.webp",
+      src: "/images/work/Cordilline/CordillineStoreFront.webp",
       alt: "Cordilline feature — heritage coat detail",
     },
     {
-      src: "/images/work/Cordilline/CordillineStorefront.webp",
+      src: "/images/work/Cordilline/CordillineHero.webp",
       alt: "Cordilline storefront — cedar siding, original sign",
     },
   ],
 
-  insights: [
-    {
-      number: "01",
-      eyebrow: "01 · DIGITAL",
-      headline: {
-        desktop: "A website that reads like the catalog.",
-        mobile: "A website that reads like the catalog.",
-      },
-      body: "We built the site the way Cordilline writes. Long captions, generous photography, two paragraphs per coat. No carousels. No hover tricks. The product pages do what the catalog has done for sixty years \u2014 show the garment, name what it\u2019s made of, and trust the customer to do the rest.",
-      media: {
-        src: "/images/work/Cordilline/CordillineFeature.webp",
-        alt: "Cordilline website hero \u2014 sixty years on the same coast.",
-        caption: "Website hero \u2014 sixty years on the same coast",
-      },
-    },
-    {
-      number: "02",
-      eyebrow: "02 · PLACE",
-      headline: {
-        desktop: "Same corner since 1971.",
-        mobile: "Same corner since 1971.",
-      },
-      body: "The shop sits on the same Astoria corner it\u2019s occupied for fifty-three years. We photographed it as it is \u2014 cedar siding gone silver, the original sign still hanging, the door you have to lean on a little. The brand doesn\u2019t need to manufacture heritage. It needs to be photographed honestly.",
-      media: {
-        src: "/images/work/Cordilline/CordillineStorefront.webp",
-        alt: "The Cordilline shop \u2014 cedar storefront sign, weathered.",
-        caption: "Cedar storefront sign",
-      },
-    },
-    {
-      number: "03",
-      eyebrow: "03 · CUSTOMER",
-      headline: {
-        desktop: "Made for the second decade of wear.",
-        mobile: "Made for the second decade of wear.",
-      },
-      body: "Cordilline\u2019s customer is not the person buying their first wool coat. It\u2019s the person whose father owned one. Both of them already know what the brand is for.",
-      media: {
-        src: "/images/work/Cordilline/CordillineVibe.webp",
+  insight: {
+    eyebrow: "Decades of craft behind every stitch",
+    body: "Cordilline\u2019s position isn\u2019t invented \u2014 it\u2019s earned. Years of making the same coat on the same corner has built a credibility no visual identity could manufacture. The product and the place do the heavy lifting. The brand simply makes it visible.",
+    mediaPair: [
+      {
+        src: "/images/work/Cordilline/CordillineTagLine.webp",
         alt: "A figure walking on a wet road in a Cordilline coat.",
-        caption: "Figure walking on wet road",
-      },
-      layout: "fullBleed",
-    },
-    {
-      number: "04",
-      eyebrow: "04 · VOICE",
-      headline: {
-        desktop: "Two paragraphs per coat. Sometimes three.",
-        mobile: "Two paragraphs per coat. Sometimes three.",
-      },
-      body: "The catalog copy was already the strongest writing in the brand. We didn\u2019t rewrite it \u2014 we built the rest of the system to match. Site copy, hangtags, the Instagram captions. Same length, same restraint, same refusal to oversell a coat that\u2019s been selling itself since 1962.",
-      media: {
-        src: "/images/work/Cordilline/CordillineCatelog.webp",
-        alt: "An editorial spread from the Cordilline catalog.",
-        caption: "Editorial catalog spread",
-      },
-    },
-    {
-      number: "05",
-      eyebrow: "05 · CRAFT",
-      headline: {
-        desktop: "Horn buttons, sewn by hand.",
-        mobile: "Horn buttons, sewn by hand.",
-      },
-      body: "Every Glade Coat ships with horn buttons sewn by the same person who\u2019s been doing it since 1998. We photographed her hands. We named her in the catalog. The detail was already there \u2014 we just stopped hiding it.",
-      media: {
-        src: "/images/work/Cordilline/CordillineSewing.webp",
-        alt: "Hands sewing a horn button onto a wool coat.",
-        caption: "Hands sewing horn button",
-      },
-    },
-  ],
-
-  pullQuote: {
-    body: "Heritage isn\u2019t a mood board. It\u2019s the second decade of a coat still doing what the first one did.",
-  },
-
-  identityShowcase: {
-    eyebrow: "\u2014 IDENTITY",
-    headline: {
-      desktop: "The system underneath.",
-      mobile: "The system underneath.",
-    },
-    cols: 3,
-    items: [
-      {
-        label: "Wordmark",
-        media: {
-          src: "/images/work/Cordilline/CordillineLogo.webp",
-          alt: "Cordilline wordmark.",
-        },
       },
       {
-        label: "Monogram",
-        media: {
-          src: "/images/work/Cordilline/CordillineFocus.webp",
-          alt: "Cordilline monogram.",
-        },
-      },
-      {
-        label: "Hangtag",
-        media: {
-          src: "/images/work/Cordilline/CordillineTagLine.webp",
-          alt: "Cordilline hangtag.",
-        },
+        src: "/images/work/Cordilline/CordillineWorkShop.webp",
+        alt: "Inside the Cordilline workshop — tools and fabric on a wooden bench.",
       },
     ],
   },
 
-  range: {
-    eyebrow: "\u2014 RANGE",
-    headline: {
-      desktop: "Fall / Winter 2025.",
-      mobile: "Fall / Winter 2025.",
+  heroPair: [
+    {
+      src: "/images/work/Cordilline/CordillineCatelog.webp",
+      alt: "Cordilline wordmark.",
     },
+    {
+      src: "/images/work/Cordilline/CordillineEditorial.webp",
+      alt: "Cordilline monogram.",
+    },
+  ],
+
+  range: {
+    eyebrow: "Worn in, not worn out",
+    body: "Every piece in the Fall / Winter 2025 range is built the same way \u2014 slow, considered, and meant to last longer than the season it ships in.",
     cols: 2,
     items: [
       {
@@ -170,7 +83,7 @@ export const project = {
       },
       {
         media: {
-          src: "/images/work/Cordilline/CordillineEditorial.webp",
+          src: "/images/work/Cordilline/CordillineVibe.webp",
           alt: "A three-garment lineup from the Fall / Winter 2025 range.",
           caption: "Three-garment lineup",
         },

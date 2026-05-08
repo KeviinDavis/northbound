@@ -33,8 +33,7 @@ export const featuredFull = {
   year: "2025",
   caption: "A heritage apparel brand, modernized without losing its weight.",
   cta: { label: "View project \u2192", href: "/work/cordilline" },
-  // TODO: Cordilline marquee image — full-bleed, deep forest tone overlay (Soft Ink range).
-  image: null,
+  image: "/images/work/Cordilline/CordillineVibe.webp",
 };
 
 // Component: FeaturedProjectGrid (cols=2) wrapping ProjectTile

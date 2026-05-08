@@ -15,6 +15,10 @@
   z-index: 0;
 }
 
+.imageLayer img {
+  object-position: center 30%;
+}
+
 .content {
   position: relative;
   z-index: 2;
