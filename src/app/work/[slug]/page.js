@@ -80,7 +80,7 @@ export default async function ProjectPage({ params }) {
         <Container variant="default">
           <div className={styles.metaIntroGrid}>
             <ProjectMeta meta={project.meta} />
-            <div>
+            <div className={styles.introBody}>
               {project.intro.body.map((text, i) => (
                 <p
                   key={i}

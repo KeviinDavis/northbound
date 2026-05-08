@@ -104,6 +104,17 @@
   }
 }
 
+.introBody {
+  max-width: 45rem;
+  font-size: var(--font-body-sm);
+}
+
+@media (min-width: 768px) {
+  .introBody {
+    font-size: var(--font-body);
+  }
+}
+
 .introParagraph {
   margin-bottom: var(--space-l);
 }

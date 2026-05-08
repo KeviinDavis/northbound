@@ -26,8 +26,9 @@ export const project = {
 
   intro: {
     body: [
-      "Cordilline has been making the same coat since 1962. The brief was three words long \u2014 don\u2019t get clever \u2014 and most of the work after that was figuring out how to honor it.",
-      "The wordmark stayed. The voice stayed. The Glade Coat stayed exactly the way it had been cut since 1971. We rebuilt everything around it.",
+      "Cordilline has been making the same coat since 1962. The brief was three words long \u2014 don\u2019t get clever \u2014 and most of the work after that was figuring out how to honor it. Rooted in the quiet rhythm of the Pacific Northwest, the brand embraced a position that celebrates craft, presence, and the beauty of doing things properly \u2014 not quickly. The ambition was clear: evolve the brand without losing its soul. The solution was a refreshed position and visual identity that feels as honest as the garment itself.",
+      "The wordmark stayed. The voice stayed. The Glade Coat stayed exactly the way it had been cut since 1971. We rebuilt everything around it. A flexible design system now equips the brand with a cohesive toolbox \u2014 from catalog and print to digital touchpoints and in-store experiences. Every element works harder, tells a clearer story, and scales without losing character.",
+      "The result is timeless rather than trendy. Confident rather than loud. Designed to live in the moment, while staying relevant for years to come. Because sometimes, the boldest move forward is to slow down.",
     ],
   },
 
