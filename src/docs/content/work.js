@@ -31,7 +31,7 @@ export const projects = [
     tags: ['Identity', 'Brand System', 'Web'],
     year: '2025',
     caption: 'A heritage apparel brand, modernized without losing its weight.',
-    image: null,
+    image: { src: '/images/work/Cordilline/CordillineFeature.webp', alt: 'Cordilline feature' },
     video: null,
     gallery: [],
   },

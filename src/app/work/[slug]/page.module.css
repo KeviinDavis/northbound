@@ -1,0 +1,193 @@
+/* ============================================================
+   Section 02 — Project Header
+   ============================================================ */
+
+.headerSection {
+  padding-block: var(--space-3xl) var(--space-5xl);
+}
+
+.backLink {
+  display: inline-block;
+  font-size: var(--font-tagline);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  font-weight: var(--weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3xl);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-stroke);
+  margin: 0 0 var(--space-5xl) 0;
+}
+
+.headerGrid {
+  position: relative;
+}
+
+.headerLabel {
+  font-size: var(--font-tagline);
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: var(--weight-normal);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-3xl) 0;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+@media (min-width: 768px) {
+  .headerLabel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  .headerContent {
+    text-align: center;
+    padding-top: var(--space-2xl);
+  }
+}
+
+.headline {
+  font-size: var(--font-h2);
+  font-weight: var(--weight-normal);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  text-transform: none;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.tagline {
+  font-size: var(--font-h5center);
+  font-weight: var(--weight-normal);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.taglineLine {
+  display: block;
+}
+
+/* ============================================================
+   Section 04 — Hero Media
+   ============================================================ */
+
+.heroSection {
+  padding-block: 0;
+}
+
+/* ============================================================
+   Section 05 — Meta + Intro
+   ============================================================ */
+
+.metaIntroGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+@media (min-width: 768px) {
+  .metaIntroGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-7xl);
+  }
+}
+
+.introParagraph {
+  margin-bottom: var(--space-l);
+}
+
+/* ============================================================
+   Section 08 — Full-bleed Insight (Customer)
+   ============================================================ */
+
+.insightHeadlineDesktop {
+  display: none;
+  margin: 0 0 var(--space-l) 0;
+}
+
+.insightHeadlineMobile {
+  display: block;
+  margin: 0 0 var(--space-l) 0;
+}
+
+@media (min-width: 768px) {
+  .insightHeadlineDesktop {
+    display: block;
+  }
+
+  .insightHeadlineMobile {
+    display: none;
+  }
+}
+
+.insightBody {
+  margin: 0;
+}
+
+.fullBleedMedia {
+  margin-top: var(--space-2xl);
+}
+
+/* ============================================================
+   Section 09 — Pull Quote
+   ============================================================ */
+
+.pullQuote {
+  font-size: var(--font-h3);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-normal);
+  color: var(--color-text-primary);
+  text-align: left;
+  margin: 0;
+}
+
+/* ============================================================
+   Sections 10 & 13 — Showcase / Range Headlines
+   ============================================================ */
+
+.sectionHeadlineDesktop {
+  display: none;
+  margin: 0 0 var(--space-3xl) 0;
+}
+
+.sectionHeadlineMobile {
+  display: block;
+  margin: 0 0 var(--space-3xl) 0;
+}
+
+@media (min-width: 768px) {
+  .sectionHeadlineDesktop {
+    display: block;
+  }
+
+  .sectionHeadlineMobile {
+    display: none;
+  }
+}
+
+/* ============================================================
+   Section 14 — Closing Line
+   ============================================================ */
+
+.closingLine {
+  font-size: var(--font-h4);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-normal);
+  color: var(--color-text-primary);
+  text-align: left;
+  margin: 0;
+}
