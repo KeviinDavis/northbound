@@ -98,11 +98,27 @@ export default async function ProjectPage({ params }) {
         </Container>
       </Section>
 
-      {/* Section 06 — Insight 01 · Digital */}
-      <SplitInsight insight={project.insights[0]} />
-
-      {/* Section 07 — Insight 02 · Place */}
-      <SplitInsight insight={project.insights[1]} />
+      {/* Section 06 — Image Pair */}
+      <Section variant="default" className={styles.imagePairSection}>
+        <Container variant="default">
+          <div className={styles.imagePairStack}>
+            <Media
+              type="image"
+              src={project.imagePair[0].src}
+              alt={project.imagePair[0].alt}
+              fill
+              aspectRatio="16/9"
+            />
+            <Media
+              type="image"
+              src={project.imagePair[1].src}
+              alt={project.imagePair[1].alt}
+              fill
+              aspectRatio="16/9"
+            />
+          </div>
+        </Container>
+      </Section>
 
       {/* Section 08 — Insight 03 · Customer (full-bleed) */}
       <Section variant="default">

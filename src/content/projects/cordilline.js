@@ -32,6 +32,17 @@ export const project = {
     ],
   },
 
+  imagePair: [
+    {
+      src: "/images/work/Cordilline/CordillineFeature.webp",
+      alt: "Cordilline feature — heritage coat detail",
+    },
+    {
+      src: "/images/work/Cordilline/CordillineStorefront.webp",
+      alt: "Cordilline storefront — cedar siding, original sign",
+    },
+  ],
+
   insights: [
     {
       number: "01",
