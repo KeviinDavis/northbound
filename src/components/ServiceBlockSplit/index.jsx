@@ -1,5 +1,6 @@
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
+import Media from "@/components/ui/Media";
 import styles from "./ServiceBlockSplit.module.css";
 
 export default function ServiceBlockSplit({ service, imageSide = "right", placeholderLabel }) {
@@ -10,11 +11,21 @@ export default function ServiceBlockSplit({ service, imageSide = "right", placeh
       <Container>
         <article className={`${styles.block} ${sideClass}`}>
           <div className={styles.imageColumn}>
-            <div className={styles.placeholder}>
-              <span className={`text-tagline ${styles.placeholderLabel}`}>
-                {placeholderLabel}
-              </span>
-            </div>
+            {service.image ? (
+              <Media
+                type="image"
+                src={service.image.src}
+                alt={service.image.alt}
+                fill
+                aspectRatio="4/5"
+              />
+            ) : (
+              <div className={styles.placeholder}>
+                <span className={`text-tagline ${styles.placeholderLabel}`}>
+                  {placeholderLabel}
+                </span>
+              </div>
+            )}
           </div>
 
           <div className={styles.copyColumn}>

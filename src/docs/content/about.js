@@ -51,7 +51,7 @@ export const founder = {
     'She still sketches every brand by hand before it goes digital.',
   ],
   portrait: {
-    src: null, // TODO: founder portrait — working/candid, studio environment
+    src: '/images/founder/Maren2.png',
     alt: 'Maren Hollis, founder of Northbound',
   },
 }

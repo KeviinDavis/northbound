@@ -14,13 +14,11 @@ export const project = {
   heroMedia: {
     src: "/images/work/Cordilline/CordillineFocus.webp",
     alt: "A heritage wool coat on a wooden hanger.",
-    caption: "Wool coat on wooden hanger",
   },
 
   meta: {
     client: "Cordilline Goods Co.",
     year: "2025",
-    categories: ["Apparel", "Heritage"],
     scope: ["Brand strategy", "Visual identity"],
   },
 
@@ -34,7 +32,7 @@ export const project = {
 
   imagePair: [
     {
-      src: "/images/work/Cordilline/CordillineStoreFront.webp",
+      src: "/images/work/Cordilline/CordillineStorefront.webp",
       alt: "Cordilline feature — heritage coat detail",
     },
     {
@@ -52,7 +50,7 @@ export const project = {
         alt: "A figure walking on a wet road in a Cordilline coat.",
       },
       {
-        src: "/images/work/Cordilline/CordillineWorkShop.webp",
+        src: "/images/work/Cordilline/CordillineWorkshop.webp",
         alt: "Inside the Cordilline workshop — tools and fabric on a wooden bench.",
       },
     ],
@@ -78,14 +76,12 @@ export const project = {
         media: {
           src: "/images/work/Cordilline/CordillineBundle.webp",
           alt: "A folded stack of Cordilline garments.",
-          caption: "Folded stack",
         },
       },
       {
         media: {
           src: "/images/work/Cordilline/CordillineVibe.webp",
           alt: "A three-garment lineup from the Fall / Winter 2025 range.",
-          caption: "Three-garment lineup",
         },
       },
     ],

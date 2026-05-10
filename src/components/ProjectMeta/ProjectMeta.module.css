@@ -9,12 +9,6 @@
   gap: var(--space-2xs);
 }
 
-.rowStacked {
-  display: flex;
-  gap: var(--space-2xs);
-  flex-wrap: wrap;
-}
-
 .label {
   font-size: var(--font-tagline);
   letter-spacing: normal;

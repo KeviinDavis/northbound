@@ -62,6 +62,13 @@
   overflow: hidden;
 }
 
+.imageBlock > div {
+  position: absolute;
+  inset: 0;
+  aspect-ratio: unset !important;
+  height: 100%;
+}
+
 @media (max-width: 1023px) {
   .imageBlock {
     aspect-ratio: unset;

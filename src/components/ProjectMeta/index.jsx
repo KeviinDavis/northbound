@@ -3,7 +3,7 @@ import styles from "./ProjectMeta.module.css";
 const rows = [
   { label: "Client", key: "client" },
   { label: "Year", key: "year" },
-  { label: "Key Focus", key: "scope", stack: true },
+  { label: "Key Focus", key: "scope" },
 ];
 
 export default function ProjectMeta({ meta }) {

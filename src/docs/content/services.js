@@ -31,6 +31,10 @@ export const serviceBranding = {
   },
   body:
     'Brand work at Northbound is research-led and product-aware. We start by understanding the company \u2014 what it makes, who buys it, where it sits in the category, and what\u2019s actually true about it. From there, we build the system: positioning, voice, naming when needed, and the visual identity that holds it all.',
+  image: {
+    src: '/images/services/services1.png',
+    alt: 'Brand system artifacts',
+  },
   capabilities: [
     'Brand strategy & positioning',
     'Audience and category research',
@@ -51,6 +55,10 @@ export const serviceIdentityPrint = {
   },
   body:
     'Logos, marks, packaging, lookbooks, hangtags, retail signage, catalogs. The objects a brand actually shows up as. Northbound brings a product designer\u2019s eye to brand artifacts \u2014 every detail is treated as something that has to function in the world.',
+  image: {
+    src: '/images/services/services2.png',
+    alt: 'Identity and print artifacts',
+  },
   capabilities: [
     'Logos and marks',
     'Packaging design',
@@ -71,6 +79,10 @@ export const serviceDigital = {
   },
   body:
     'Brand websites, ecommerce, and digital systems built on modern frameworks. Northbound writes the copy, designs the system, and ships the build. We keep digital scope tight \u2014 most clients don\u2019t need a hundred pages, they need ten that work.',
+  image: {
+    src: '/images/services/services3.png',
+    alt: 'Digital site systems',
+  },
   capabilities: [
     'Brand websites',
     'Shopify and headless ecommerce',

@@ -33,7 +33,7 @@ export const featuredFull = {
   year: "2025",
   caption: "A heritage apparel brand, modernized without losing its weight.",
   cta: { label: "View project \u2192", href: "/work/cordilline" },
-  image: "/images/work/Cordilline/CordillineVibe.webp",
+  image: "/images/work/Cordilline/CORDILLINE.png",
 };
 
 // Component: FeaturedProjectGrid (cols=2) wrapping ProjectTile
@@ -78,9 +78,7 @@ export const aboutPreview = {
   ],
   cta: { label: "Meet the studio \u2192", href: "/about" },
   imageSide: "right",
-  // TODO: Studio environment photo — candid, warm neutral palette, Northeast Portland workspace.
-  // Not a portrait. Per copy doc §4.4 notes.
-  image: null,
+  image: "/images/founder/Maren3.png",
   imageMeta: "STUDIO.JPG — 2026",
   imageCaption: "STUDIO ENVIRONMENT, NORTHEAST PORTLAND",
 };

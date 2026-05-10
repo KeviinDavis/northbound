@@ -15,6 +15,7 @@ export default function FeaturedProjectFull({ content }) {
                 src={content.image}
                 alt={content.name}
                 fill
+                aspectRatio="16/9"
                 priority
               />
             </div>
