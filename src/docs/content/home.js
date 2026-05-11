@@ -49,7 +49,7 @@ export const featuredGrid = {
       year: "2025",
       caption: "A heritage apparel brand, modernized without losing its weight.",
       cta: { label: "View project \u2192", href: "/work/cordilline" },
-      image: { src: "/images/work/Cordilline/Cordillinebeach2.png", alt: "Cordilline" },
+      image: { src: "/images/work/Cordilline/CordillineBeach2.png", alt: "Cordilline" },
     },
     {
       slug: "tidewater-hospitality",
