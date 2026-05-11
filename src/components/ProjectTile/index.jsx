@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Media from "@/components/ui/Media";
+import Image from "next/image";
 import styles from "./ProjectTile.module.css";
 
 export default function ProjectTile({ project, aspectRatio = "1/1" }) {
@@ -10,11 +10,11 @@ export default function ProjectTile({ project, aspectRatio = "1/1" }) {
       <div className={styles.imageBlock}>
         <div className={imageClasses}>
           {project.image ? (
-            <Media
-              type="image"
+            <Image
               src={project.image.src}
-              alt={project.image.alt}
+              alt={project.image.alt || project.name}
               fill
+              sizes="(max-width: 480px) 92vw, 48vw"
             />
           ) : null}
         </div>
