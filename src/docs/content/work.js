@@ -22,32 +22,8 @@ export const pageHeader = {
 }
 
 // Component: WorkGrid / WorkBlock
-// Grid order matters — Cordilline, Field Provisions, and Tidewater lead.
+// Grid order matters — Field Provisions, Cordilline, and Tidewater lead.
 export const projects = [
-  {
-    slug: 'cordilline',
-    name: 'Cordilline',
-    category: 'Apparel \u00B7 Identity, Brand System, Web',
-    tags: ['Identity', 'Brand System', 'Web'],
-    year: '2025',
-    caption: 'A heritage apparel brand, modernized without losing its weight.',
-    image: { src: '/images/work/Cordilline/CordillineFocus.webp', alt: 'Cordilline feature' },
-    video: null,
-    gallery: [
-      { src: '/images/work/Cordilline/CordillineHero.webp', alt: 'Cordilline hero' },
-      { src: '/images/work/Cordilline/CordillineEditorial.webp', alt: 'Cordilline editorial' },
-      { src: '/images/work/Cordilline/CordillineLogo.webp', alt: 'Cordilline logo' },
-      { src: '/images/work/Cordilline/CordillineTagLine.webp', alt: 'Cordilline tagline' },
-      { src: '/images/work/Cordilline/CordillineFocus.webp', alt: 'Cordilline focus' },
-      { src: '/images/work/Cordilline/CordillineBundle.webp', alt: 'Cordilline bundle' },
-      { src: '/images/work/Cordilline/CordillineSewing.webp', alt: 'Cordilline sewing' },
-      { src: '/images/work/Cordilline/CordillineCatelog.webp', alt: 'Cordilline catalog' },
-      { src: '/images/work/Cordilline/CordillineStorefront.webp', alt: 'Cordilline storefront' },
-      { src: '/images/work/Cordilline/CordillineWorkshop.webp', alt: 'Cordilline workshop' },
-      { src: '/images/work/Cordilline/CordillineVibe.webp', alt: 'Cordilline vibe' },
-      { src: '/images/work/Cordilline/Cordilline.webp', alt: 'Cordilline' },
-    ],
-  },
   {
     slug: 'field-provisions',
     name: 'Field Provisions',
@@ -58,10 +34,9 @@ export const projects = [
     image: { src: '/images/work/FieldProvisions/Field Provisions11.png', alt: 'Field Provisions feature' },
     video: null,
     gallery: [
-      { src: '/images/work/FieldProvisions/Field Provisions1.png', alt: 'Field Provisions 1' },
-      { src: '/images/work/FieldProvisions/Field Provisions2.png', alt: 'Field Provisions 2' },
-      { src: '/images/work/FieldProvisions/Field Provisions3.png', alt: 'Field Provisions 3' },
-      { src: '/images/work/FieldProvisions/Field Provisions4.png', alt: 'Field Provisions 4' },
+      { src: '/images/work/FieldProvisions/Field Provisions2.png', alt: 'Field Provisions 1' },
+      { src: '/images/work/FieldProvisions/Field Provisions3.png', alt: 'Field Provisions 2' },
+      { src: '/images/work/FieldProvisions/Field Provisions4.png', alt: 'Field Provisions 3' },
       { src: '/images/work/FieldProvisions/Field Provisions5.png', alt: 'Field Provisions 5' },
       { src: '/images/work/FieldProvisions/Field Provisions6.png', alt: 'Field Provisions 6' },
       { src: '/images/work/FieldProvisions/Field Provisions7.png', alt: 'Field Provisions 7' },
@@ -70,6 +45,31 @@ export const projects = [
       { src: '/images/work/FieldProvisions/Field Provisions10.png', alt: 'Field Provisions 10' },
       { src: '/images/work/FieldProvisions/Field Provisions11.png', alt: 'Field Provisions 11' },
       { src: '/images/work/FieldProvisions/Field Provisions12.png', alt: 'Field Provisions 12' },
+    ],
+  },
+  {
+    slug: 'cordilline',
+    name: 'Cordilline',
+    category: 'Apparel \u00B7 Identity, Brand System, Web',
+    tags: ['Identity', 'Brand System', 'Web'],
+    year: '2025',
+    caption: 'A heritage apparel brand, modernized without losing its weight.',
+    image: { src: '/images/work/Cordilline/CordillineFocus.webp', alt: 'Cordilline feature' },
+    video: null,
+    gallery: [
+      { src: '/images/work/Cordilline/CordillineEditorial.webp', alt: 'Cordilline editorial' },
+      // { src: '/images/work/Cordilline/CordillineLogo.webp', alt: 'Cordilline logo' },
+      { src: '/images/work/Cordilline/CordillineTagLine.webp', alt: 'Cordilline tagline' },
+      { src: '/images/work/Cordilline/CordillineFocus.webp', alt: 'Cordilline focus' },
+      { src: '/images/work/Cordilline/CordillineBundle.webp', alt: 'Cordilline bundle' },
+      { src: '/images/work/Cordilline/CordillineSewing.webp', alt: 'Cordilline sewing' },
+      { src: '/images/work/Cordilline/CordillineCatelog.webp', alt: 'Cordilline catalog' },
+      { src: '/images/work/Cordilline/CordillineStorefront.webp', alt: 'Cordilline storefront' },
+      { src: '/images/work/Cordilline/CordillineWorkshop.webp', alt: 'Cordilline workshop' },
+      { src: '/images/work/Cordilline/CordillineHero.webp', alt: 'Cordilline hero' },
+      { src: '/images/work/Cordilline/CordillineVibe.webp', alt: 'Cordilline vibe' },
+      { src: '/images/work/Cordilline/Cordilline.webp', alt: 'Cordilline' },
+
     ],
   },
   {
@@ -82,11 +82,10 @@ export const projects = [
     image: { src: '/images/work/TidewaterHospitality/TidewaterHospitality9.png', alt: 'Tidewater Hospitality feature' },
     video: null,
     gallery: [
-      { src: '/images/work/TidewaterHospitality/TidewaterHospitality3.png', alt: 'Tidewater Hospitality 3' },
-      { src: '/images/work/TidewaterHospitality/TidewaterHospitality4.png', alt: 'Tidewater Hospitality 4' },
-      { src: '/images/work/TidewaterHospitality/TidewaterHospitality5.png', alt: 'Tidewater Hospitality 5' },
-      { src: '/images/work/TidewaterHospitality/TidewaterHospitality6.png', alt: 'Tidewater Hospitality 6' },
+      { src: '/images/work/TidewaterHospitality/TidewaterHospitality5.png', alt: 'Tidewater Hospitality 4' },
+      { src: '/images/work/TidewaterHospitality/TidewaterHospitality6.png', alt: 'Tidewater Hospitality 5' },
       { src: '/images/work/TidewaterHospitality/TidewaterHospitality7.png', alt: 'Tidewater Hospitality 7' },
+      { src: '/images/work/TidewaterHospitality/TidewaterHospitality3.png', alt: 'Tidewater Hospitality 3' },     
       { src: '/images/work/TidewaterHospitality/TidewaterHospitality8.png', alt: 'Tidewater Hospitality 8' },
       { src: '/images/work/TidewaterHospitality/TidewaterHospitality9.png', alt: 'Tidewater Hospitality 9' },
       { src: '/images/work/TidewaterHospitality/TidewaterHospitality10.png', alt: 'Tidewater Hospitality 10' },

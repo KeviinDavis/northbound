@@ -12,6 +12,8 @@ import styles from "./page.module.css";
 
 const projectModules = {
   cordilline: () => import("@/content/projects/cordilline"),
+  "field-provisions": () => import("@/content/projects/field-provisions"),
+  "tidewater-hospitality": () => import("@/content/projects/tidewater-hospitality"),
 };
 
 async function getProject(slug) {
