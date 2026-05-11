@@ -18,7 +18,7 @@ export const project = {
 
   meta: {
     client: "Tarn Goods",
-    year: "2020",
+    year: "2026",
     scope: ["Identity", "Web", "Retail Environments"],
   },
 

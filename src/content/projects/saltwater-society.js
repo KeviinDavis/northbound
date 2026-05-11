@@ -18,7 +18,7 @@ export const project = {
 
   meta: {
     client: "Saltwater Society",
-    year: "2023",
+    year: "2026",
     scope: ["Brand System", "Digital"],
   },
 

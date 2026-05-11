@@ -18,7 +18,7 @@ export const project = {
 
   meta: {
     client: "Field Provisions Co.",
-    year: "2024",
+    year: "2026",
     scope: ["Brand system", "Packaging design", "Web"],
   },
 
