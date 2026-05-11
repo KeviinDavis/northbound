@@ -13,6 +13,8 @@ import styles from "./page.module.css";
 const projectModules = {
   cordilline: () => import("@/content/projects/cordilline"),
   "field-provisions": () => import("@/content/projects/field-provisions"),
+  "tarn-goods": () => import("@/content/projects/tarn-goods"),
+  "saltwater-society": () => import("@/content/projects/saltwater-society"),
   "tidewater-hospitality": () => import("@/content/projects/tidewater-hospitality"),
 };
 

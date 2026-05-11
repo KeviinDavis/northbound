@@ -161,7 +161,7 @@ export const awards = {
   ],
 };
 
-// Component: JournalPreviewGrid (cols=3, showExcerpt=false) wrapping JournalCard
+// Component: JournalPreviewGrid (cols=2, showExcerpt=false) wrapping JournalCard
 // Source: v2 §4.7
 export const journalPreview = {
   eyebrow: "FROM THE JOURNAL",
@@ -169,7 +169,7 @@ export const journalPreview = {
     desktop: "Notes from the studio.",
     mobile: "Notes from the studio.",
   },
-  cols: 3,
+  cols: 2,
   showExcerpt: false,
   articles: [
     {
@@ -177,24 +177,14 @@ export const journalPreview = {
       category: "ESSAY",
       headline: "Why the outdoor industry keeps redesigning the same logo.",
       date: "March 2026",
-      // TODO: Essay cover image — March 2026.
-      image: null,
+      image: { src: "/images/journal/journal1.png", alt: "Why the outdoor industry keeps redesigning the same logo" },
     },
     {
       slug: "guide-service-since-1962",
       category: "CASE NOTE",
       headline: "Building a brand system for a guide service that\u2019s been running since 1962.",
       date: "February 2026",
-      // TODO: Case note cover image — February 2026.
-      image: null,
-    },
-    {
-      slug: "one-industry-on-purpose",
-      category: "STUDIO",
-      headline: "On working with one industry, on purpose.",
-      date: "January 2026",
-      // TODO: Studio cover image — January 2026.
-      image: null,
+      image: { src: "/images/journal/journal2.png", alt: "Building a brand system for a guide service since 1962" },
     },
   ],
   cta: { label: "Read the journal \u2192", href: "/journal" },

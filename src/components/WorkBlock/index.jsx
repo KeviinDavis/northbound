@@ -7,6 +7,8 @@ import styles from './WorkBlock.module.css';
 
 export default function WorkBlock({ project, index }) {
   const videoRef = useRef(null);
+  const isActive = project.active !== false;
+
   function handleMouseEnter() {
     if (!project.video || !videoRef.current) return;
     if (!videoRef.current.src) {
@@ -20,14 +22,22 @@ export default function WorkBlock({ project, index }) {
     videoRef.current.pause();
   }
 
+  const Wrapper = isActive ? Link : 'div';
+  const wrapperProps = isActive
+    ? {
+        href: `/work/${project.slug}`,
+        className: styles.block,
+        id: project.slug,
+        onMouseEnter: handleMouseEnter,
+        onMouseLeave: handleMouseLeave,
+      }
+    : {
+        className: `${styles.block} ${styles.inactive}`,
+        id: project.slug,
+      };
+
   return (
-    <Link
-      href={`/work/${project.slug}`}
-      className={styles.block}
-      id={project.slug}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <Wrapper {...wrapperProps}>
       <div className={styles.visualWrap}>
         <div className={styles.imageWrap}>
           {project.image ? (
@@ -71,6 +81,6 @@ export default function WorkBlock({ project, index }) {
       <div className={styles.borderDecor}>
         <div className={styles.borderLine} />
       </div>
-    </Link>
+    </Wrapper>
   );
 }

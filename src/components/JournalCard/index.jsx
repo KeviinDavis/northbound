@@ -15,6 +15,7 @@ export default function JournalCard({ article, aspectRatio = "4/3", showExcerpt 
               src={article.image.src}
               alt={article.image.alt}
               fill
+              aspectRatio={aspectRatio}
             />
           ) : null}
         </div>
