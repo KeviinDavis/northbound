@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.mobileImage {
+  display: none;
+}
+
 .content {
   position: absolute;
   inset: 0;
@@ -125,6 +129,14 @@
   }
 
   .details {
+    display: block;
+  }
+
+  .desktopImage {
+    display: none;
+  }
+
+  .mobileImage {
     display: block;
   }
 }

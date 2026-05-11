@@ -27,13 +27,14 @@ export const hero = {
 // Component: FeaturedProjectFull
 // Source: v2 §4.2
 export const featuredFull = {
-  slug: "cordilline",
-  name: "Cordilline",
-  category: "Apparel \u00B7 Identity & Web",
-  year: "2025",
-  caption: "A heritage apparel brand, modernized without losing its weight.",
-  cta: { label: "View project \u2192", href: "/work/cordilline" },
-  image: "/images/work/Cordilline/CORDILLINE.png",
+  slug: "field-provisions",
+  name: "Field Provisions",
+  category: "Food & Outdoor Retail \u00B7 Brand System",
+  year: "2024",
+  caption: "A trail food company built around one idea \u2014 you eat better when you carry less.",
+  cta: { label: "View project \u2192", href: "/work/field-provisions" },
+  image: "/images/work/FieldProvisions/Field Provisions11.png",
+  imageMobile: "/images/work/FieldProvisions/Field Provisions2.png",
 };
 
 // Component: FeaturedProjectGrid (cols=2) wrapping ProjectTile
@@ -42,14 +43,13 @@ export const featuredGrid = {
   cols: 2,
   projects: [
     {
-      slug: "field-provisions",
-      name: "Field Provisions",
-      category: "Food & Outdoor Retail \u00B7 Brand System",
-      year: "2024",
-      caption: "A trail food company built around one idea \u2014 you eat better when you carry less.",
-      cta: { label: "View project \u2192", href: "/work/field-provisions" },
-      // TODO: Field Provisions tile image — 1:1 desktop, 4:5 mobile, warm-neutral overlay.
-      image: null,
+      slug: "cordilline",
+      name: "Cordilline",
+      category: "Apparel \u00B7 Identity & Web",
+      year: "2025",
+      caption: "A heritage apparel brand, modernized without losing its weight.",
+      cta: { label: "View project \u2192", href: "/work/cordilline" },
+      image: { src: "/images/work/Cordilline/CordillineFocus.webp", alt: "Cordilline" },
     },
     {
       slug: "tidewater-hospitality",
@@ -58,8 +58,7 @@ export const featuredGrid = {
       year: "2025",
       caption: "A new identity for a third-generation Oregon coast outfitter.",
       cta: { label: "View project \u2192", href: "/work/tidewater-hospitality" },
-      // TODO: Tidewater Hospitality tile image — 1:1 desktop, 4:5 mobile, warm-neutral overlay.
-      image: null,
+      image: { src: "/images/work/TidewaterHospitality/TidewaterHospitality9.png", alt: "Tidewater Hospitality" },
     },
   ],
 };

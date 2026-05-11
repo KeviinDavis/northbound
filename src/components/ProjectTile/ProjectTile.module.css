@@ -12,6 +12,7 @@
 }
 
 .imageInner {
+  position: relative;
   aspect-ratio: 1 / 1;
   background-color: var(--color-soft-ink);
   transition: transform var(--transition-base);
@@ -23,14 +24,13 @@
 
 @media (max-width: 959px) {
   .imageInner {
-    height: 55vh;
-    aspect-ratio: auto;
+    aspect-ratio: 4 / 5;
   }
 }
 
 @media (max-width: 767px) {
   .imageInner {
-    height: 45vh;
+    aspect-ratio: 4 / 5;
   }
 }
 

@@ -10,15 +10,28 @@ export default function FeaturedProjectFull({ content }) {
       <Container>
         <div className={styles.card}>
           {content.image ? (
-            <div className={styles.imageLayer}>
-              <Media
-                src={content.image}
-                alt={content.name}
-                fill
-                aspectRatio="16/9"
-                priority
-              />
-            </div>
+            <>
+              <div className={`${styles.imageLayer} ${styles.desktopImage}`}>
+                <Media
+                  src={content.image}
+                  alt={content.name}
+                  fill
+                  aspectRatio="16/9"
+                  priority
+                />
+              </div>
+              {content.imageMobile && (
+                <div className={`${styles.imageLayer} ${styles.mobileImage}`}>
+                  <Media
+                    src={content.imageMobile}
+                    alt={content.name}
+                    fill
+                    aspectRatio="3/4"
+                    priority
+                  />
+                </div>
+              )}
+            </>
           ) : null}
 
           <div className={styles.content}>
