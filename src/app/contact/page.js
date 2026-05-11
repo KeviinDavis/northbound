@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header';
 import PageHeaderEditorial from '@/components/PageHeaderEditorial';
+import FadeIn from '@/components/FadeIn';
 import ContactFormBlock from '@/components/ContactFormBlock';
 import TextBlockNarrow from '@/components/TextBlockNarrow';
 
@@ -10,7 +11,9 @@ export default function Contact() {
     <>
       <Header />
       <PageHeaderEditorial pageHeader={pageHeader} />
-      <ContactFormBlock contactForm={contactForm} studioInfo={studioInfo} />
+      <FadeIn>
+        <ContactFormBlock contactForm={contactForm} studioInfo={studioInfo} />
+      </FadeIn>
       <TextBlockNarrow block={closingNote} />
     </>
   );

@@ -40,6 +40,8 @@ export default function PageWipeTransition() {
         return;
       }
 
+      window.__transitionActive = true;
+
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
       if (reducedMotion) {
@@ -112,6 +114,10 @@ export default function PageWipeTransition() {
         autoAlpha: 0,
         duration: 0.2,
         ease: "power2.in",
+      })
+      .call(() => {
+        window.__transitionActive = false;
+        window.dispatchEvent(new CustomEvent("transition:reveal"));
       })
       .to(panel, {
         yPercent: -200,

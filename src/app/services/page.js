@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header';
 import PageHeaderEditorial from '@/components/PageHeaderEditorial';
+import FadeIn from '@/components/FadeIn';
 import ServiceBlockSplit from '@/components/ServiceBlockSplit';
 import ProcessSection from '@/components/ProcessSection';
 import TextBlockNarrow from '@/components/TextBlockNarrow';
@@ -14,7 +15,9 @@ export default function Services() {
     <>
       <Header />
       <PageHeaderEditorial pageHeader={pageHeader} />
-      <ServiceBlockSplit service={serviceBranding} imageSide="right" placeholderLabel="BRAND SYSTEM — ARTIFACTS" />
+      <FadeIn>
+        <ServiceBlockSplit service={serviceBranding} imageSide="right" placeholderLabel="BRAND SYSTEM — ARTIFACTS" />
+      </FadeIn>
       <ServiceBlockSplit service={serviceIdentityPrint} imageSide="left" placeholderLabel="IDENTITY & PRINT — ARTIFACTS" />
       <ServiceBlockSplit service={serviceDigital} imageSide="right" placeholderLabel="DIGITAL — SITE SYSTEMS" />
       <ProcessSection process={process} />

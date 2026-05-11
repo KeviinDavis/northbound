@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import HeroEditorial from "@/components/HeroEditorial";
+import FadeIn from "@/components/FadeIn";
 import FeaturedProjectFull from "@/components/FeaturedProjectFull";
 import FeaturedProjectGrid from "@/components/FeaturedProjectGrid";
 import AboutSplit from "@/components/AboutSplit";
@@ -16,7 +17,9 @@ export default function Home() {
     <>
       <Header variant="overlay" />
       <HeroEditorial content={hero} />
-      <FeaturedProjectFull content={featuredFull} />
+      <FadeIn>
+        <FeaturedProjectFull content={featuredFull} />
+      </FadeIn>
       <Section>
         <Container>
           <FeaturedProjectGrid cols={featuredGrid.cols} projects={featuredGrid.projects} />

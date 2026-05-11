@@ -15,6 +15,25 @@ export default function HeroEditorial({ content }) {
       (el) => el && el.offsetParent !== null
     );
     gsap.set(els, { yPercent: 110 });
+
+    function animate() {
+      gsap.to(els, {
+        yPercent: 0,
+        duration: 0.9,
+        ease: "power3.out",
+        stagger: 0.08,
+      });
+    }
+
+    if (window.__transitionActive) {
+      function onReveal() {
+        window.removeEventListener("transition:reveal", onReveal);
+        animate();
+      }
+      window.addEventListener("transition:reveal", onReveal);
+      return () => window.removeEventListener("transition:reveal", onReveal);
+    }
+
     gsap.to(els, {
       yPercent: 0,
       duration: 0.9,

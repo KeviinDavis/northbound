@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header';
 import PageHeaderEditorial from '@/components/PageHeaderEditorial';
+import FadeIn from '@/components/FadeIn';
 import LongFormSection from "@/components/LongFormSection";
 import AboutSplit from "@/components/AboutSplit";
 import Section from "@/components/layout/Section";
@@ -18,7 +19,9 @@ export default function About() {
     <div style={{ backgroundColor: 'var(--color-muted)', minHeight: '100vh' }}>
       <Header variant="muted" />
       <PageHeaderEditorial pageHeader={pageHeader} sectionVariant="muted" flush />
-      <LongFormSection studioOrigin={studioOrigin} sectionVariant="muted" />
+      <FadeIn>
+        <LongFormSection studioOrigin={studioOrigin} sectionVariant="muted" />
+      </FadeIn>
       <Section variant="muted">
         <Container>
           <AboutSplit content={{ ...founder, image: founder.portrait?.src ?? null, imageSide: "left", mobileImageFirst: true }} />

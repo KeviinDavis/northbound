@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header';
 import PageHeaderEditorial from '@/components/PageHeaderEditorial';
+import FadeIn from '@/components/FadeIn';
 import JournalPreviewGrid from '@/components/JournalPreviewGrid';
 import Section from '@/components/layout/Section';
 import Container from '@/components/layout/Container';
@@ -15,6 +16,7 @@ export default function Journal() {
     <>
       <Header />
       <PageHeaderEditorial pageHeader={pageHeader} />
+      <FadeIn>
       <Section>
         <Container>
           <JournalPreviewGrid
@@ -27,6 +29,7 @@ export default function Journal() {
           />
         </Container>
       </Section>
+      </FadeIn>
       <FooterCTA footerCTA={footerCTA} email={footer.columns.connect.links.find(l => l.href?.startsWith('mailto:'))?.label} />
       
     </>

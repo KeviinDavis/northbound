@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
+import FadeIn from "@/components/FadeIn";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
 import Media from "@/components/ui/Media";
@@ -63,18 +64,20 @@ export default async function ProjectPage({ params }) {
       </Container>
 
       {/* Section 03 — Hero Media */}
-      <Section variant="default" className={styles.heroSection}>
-        <Container variant="default">
-          <Media
-            type="image"
-            src={project.heroMedia.src}
-            alt={project.heroMedia.alt}
-            fill
-            aspectRatio="16/9"
-            priority
-          />
-        </Container>
-      </Section>
+      <FadeIn>
+        <Section variant="default" className={styles.heroSection}>
+          <Container variant="default">
+            <Media
+              type="image"
+              src={project.heroMedia.src}
+              alt={project.heroMedia.alt}
+              fill
+              aspectRatio="16/9"
+              priority
+            />
+          </Container>
+        </Section>
+      </FadeIn>
 
       {/* Section 05 — Meta + Intro */}
       <Container variant="default">
