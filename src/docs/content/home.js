@@ -34,7 +34,7 @@ export const featuredFull = {
   caption: "A trail food company built around one idea \u2014 you eat better when you carry less.",
   cta: { label: "View project \u2192", href: "/work/field-provisions" },
   image: "/images/work/FieldProvisions/Field Provisions11.png",
-  imageMobile: "/images/work/FieldProvisions/Field Provisions2.png",
+  imageMobile: "/images/work/FieldProvisions/Field Provisions5.png",
 };
 
 // Component: FeaturedProjectGrid (cols=2) wrapping ProjectTile

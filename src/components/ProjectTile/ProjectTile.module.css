@@ -18,6 +18,10 @@
   transition: transform var(--transition-base);
 }
 
+.imageInner > div {
+  height: 100%;
+}
+
 .portrait {
   aspect-ratio: 4 / 5;
 }
