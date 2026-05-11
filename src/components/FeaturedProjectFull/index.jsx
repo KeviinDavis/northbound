@@ -1,7 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
-import Media from "@/components/ui/Media";
 import styles from "./FeaturedProjectFull.module.css";
 
 export default function FeaturedProjectFull({ content }) {
@@ -10,28 +10,15 @@ export default function FeaturedProjectFull({ content }) {
       <Container>
         <div className={styles.card}>
           {content.image ? (
-            <>
-              <div className={`${styles.imageLayer} ${styles.desktopImage}`}>
-                <Media
-                  src={content.image}
-                  alt={content.name}
-                  fill
-                  aspectRatio="16/9"
-                  priority
-                />
-              </div>
-              {content.imageMobile && (
-                <div className={`${styles.imageLayer} ${styles.mobileImage}`}>
-                  <Media
-                    src={content.imageMobile}
-                    alt={content.name}
-                    fill
-                    aspectRatio="3/4"
-                    priority
-                  />
-                </div>
-              )}
-            </>
+            <div className={styles.imageLayer}>
+              <Image
+                src={content.image}
+                alt={content.name}
+                fill
+                sizes="100vw"
+                priority
+              />
+            </div>
           ) : null}
 
           <div className={styles.content}>

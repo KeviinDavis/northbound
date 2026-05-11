@@ -1,7 +1,7 @@
 .root {
   display: flex;
   flex-direction: column;
-  gap: var(--space-l);
+  gap: var(--space-m);
 }
 
 /* ---- Image block ---- */
@@ -23,17 +23,6 @@
   aspect-ratio: 4 / 5;
 }
 
-@media (max-width: 959px) {
-  .imageInner {
-    aspect-ratio: 4 / 5;
-  }
-}
-
-@media (max-width: 767px) {
-  .imageInner {
-    aspect-ratio: 4 / 5;
-  }
-}
 
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .root:hover .imageInner {
@@ -62,7 +51,7 @@
 .meta {
   display: flex;
   flex-direction: column;
-  gap: var(--space-s);
+  gap: var(--space-3xs);
 }
 
 .category {
@@ -74,6 +63,7 @@
 }
 
 .cta {
+  margin-top: var(--space-s);
   font-weight: var(--weight-medium);
   text-decoration: underline;
   text-underline-offset: 0.25em;

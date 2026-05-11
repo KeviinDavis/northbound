@@ -128,8 +128,7 @@
 
 @media (max-width: 480px) {
   .imageWrap {
-    aspect-ratio: auto;
-    height: 45vh;
+    aspect-ratio: 4 / 3;
   }
 
   .infoWrap {

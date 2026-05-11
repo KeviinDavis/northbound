@@ -9,12 +9,15 @@
 }
 
 .imageLayer {
+  position: relative;
   width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
-.mobileImage {
-  display: none;
+.imageLayer img {
+  object-fit: cover;
 }
+
 
 .content {
   position: absolute;
@@ -132,11 +135,7 @@
     display: block;
   }
 
-  .desktopImage {
-    display: none;
-  }
-
-  .mobileImage {
-    display: block;
+  .imageLayer {
+    aspect-ratio: 4 / 3;
   }
 }
