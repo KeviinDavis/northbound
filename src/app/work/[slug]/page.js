@@ -42,25 +42,23 @@ export default async function ProjectPage({ params }) {
       <Header variant="overlay" />
 
       {/* Section 02 — Project Header */}
-      <Section variant="default" className={styles.headerSection}>
-        <Container variant="default">
-          <Link href="/work" className={styles.backLink}>
-            &larr; All Work
-          </Link>
-          <hr className={styles.divider} />
-          <div className={styles.headerGrid}>
-            <p className={styles.headerLabel}>{project.header.label}</p>
-            <div className={styles.headerContent}>
-              <h1 className={styles.headline}>{project.header.headline}</h1>
-              <p className={styles.tagline}>
-                {project.header.tagline.map((line, i) => (
-                  <span key={i} className={styles.taglineLine}>{line}</span>
-                ))}
-              </p>
-            </div>
+      <Container variant="default">
+        <Link href="/work" className={styles.backLink}>
+          &larr; All Work
+        </Link>
+        <hr className={styles.divider} />
+        <div className={styles.headerGrid}>
+          <p className={styles.headerLabel}>{project.header.label}</p>
+          <div className={styles.headerContent}>
+            <h1 className={styles.headline}>{project.header.headline}</h1>
+            <p className={styles.tagline}>
+              {project.header.tagline.map((line, i) => (
+                <span key={i} className={styles.taglineLine}>{line}</span>
+              ))}
+            </p>
           </div>
-        </Container>
-      </Section>
+        </div>
+      </Container>
 
       {/* Section 03 — Hero Media */}
       <Section variant="default" className={styles.heroSection}>
@@ -77,27 +75,25 @@ export default async function ProjectPage({ params }) {
       </Section>
 
       {/* Section 05 — Meta + Intro */}
-      <Section variant="default">
-        <Container variant="default">
-          <div className={styles.metaIntroGrid}>
-            <ProjectMeta meta={project.meta} />
-            <div className={styles.introBody}>
-              {project.intro.body.map((text, i) => (
-                <p
-                  key={i}
-                  className={
-                    i < project.intro.body.length - 1
-                      ? styles.introParagraph
-                      : undefined
-                  }
-                >
-                  {text}
-                </p>
-              ))}
-            </div>
+      <Container variant="default">
+        <div className={styles.metaIntroGrid}>
+          <ProjectMeta meta={project.meta} />
+          <div className={styles.introBody}>
+            {project.intro.body.map((text, i) => (
+              <p
+                key={i}
+                className={
+                  i < project.intro.body.length - 1
+                    ? styles.introParagraph
+                    : undefined
+                }
+              >
+                {text}
+              </p>
+            ))}
           </div>
-        </Container>
-      </Section>
+        </div>
+      </Container>
 
       {/* Section 06 — Image Pair */}
       <Section variant="default" className={styles.imagePairSection}>

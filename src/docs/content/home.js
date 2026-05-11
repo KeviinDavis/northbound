@@ -77,8 +77,6 @@ export const aboutPreview = {
   cta: { label: "Meet the studio \u2192", href: "/about" },
   imageSide: "right",
   image: "/images/founder/Maren3.png",
-  imageMeta: "STUDIO.JPG — 2026",
-  imageCaption: "STUDIO ENVIRONMENT, NORTHEAST PORTLAND",
 };
 
 // Component: LogoWallDense
