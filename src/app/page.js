@@ -1,4 +1,5 @@
 import Header from "@/components/layout/Header";
+import IntroLoader from "@/components/IntroLoader";
 import HeroEditorial from "@/components/HeroEditorial";
 import FadeIn from "@/components/FadeIn";
 import FeaturedProjectFull from "@/components/FeaturedProjectFull";
@@ -10,11 +11,12 @@ import AwardsTable from "@/components/AwardsTable";
 import JournalPreviewGrid from "@/components/JournalPreviewGrid";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
-import { hero, featuredFull, featuredGrid, aboutPreview, logoWall, logoWallCycle, awards, journalPreview } from "@/docs/content/home";
+import { intro, hero, featuredFull, featuredGrid, aboutPreview, logoWall, logoWallCycle, awards, journalPreview } from "@/docs/content/home";
 
 export default function Home() {
   return (
     <>
+      <IntroLoader content={intro} />
       <Header variant="overlay" />
       <HeroEditorial content={hero} />
       <FadeIn>

@@ -8,6 +8,26 @@
 //
 // FooterCTA copy lives in site.js, not here. Meta lives in site.js (homepage uses the global default).
 
+// Component: IntroLoader
+// Source: adaptation — Osmo "Willem" loading animation, Northbound wordmark.
+// images[0] is the image the loader lands on; the rest flick past in order.
+// One card image per work-grid company, matching work.js project images.
+export const intro = {
+  word: "Northbound",
+  registeredMark: true,
+  images: [
+    "/images/work/FieldProvisions/Field Provisions11.png",
+    "/images/work/TarnGoods/TarnGoods1.png",
+    "/images/work/SaltwaterSociety/SaltwaterSociety3.png",
+    "/images/work/Cordilline/CordillineFocus.webp",
+    "/images/work/TidewaterHospitality/TidewaterHospitality9.png",
+    "/images/work/BoulderCache/BoulderCache2.png",
+    "/images/work/SandyRiver/SandyRiver3.png",
+    "/images/work/MarlowStudies/MarlowStudies2.png",
+    "/images/work/HeronAndWells/HeronAndWells4.png",
+  ],
+};
+
 // Component: HeroEditorial
 // Source: v2 §4.1
 export const hero = {

@@ -1,0 +1,116 @@
+/* IntroLoader — landing-page intro adapted from the Osmo "Willem" loading
+   animation. Fixed full-viewport overlay (same layer pattern as
+   PageWipeTransition); the fake header/nav from the original is stripped and
+   the reveal hands off to the real page via the transition:reveal event.
+
+   Internal measurements stay in em on purpose: the gap box, half-widths and
+   kerning nudges are coupled to the letter size, and the mechanic breaks in
+   rem. The two half-widths are exposed as vars for optical kerning tweaks. */
+
+.intro {
+  --title-start-width: max-content;
+  --title-end-width: max-content;
+
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Matches the PageWipeTransition panel: ink backdrop, muted wordmark */
+  background-color: var(--color-ink);
+  color: var(--color-muted);
+  overflow: clip;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  /* Ships hidden so the pre-hydration static frame is just the blank overlay;
+     the timeline reveals it in the same pre-paint tick it offsets the letters. */
+  visibility: hidden;
+  /* Type mirrors the nav logo (Header .logo): same weight, tracking, leading.
+     Fluid 375px→1440px like the token type scale; the max is the desktop
+     size (4× the wipe label), the min keeps word + open gap (~7.4em total)
+     inside a 320px screen. */
+  font-size: clamp(1.75rem, calc(0.95rem + 4.5vw), calc(var(--font-h5) * 4));
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  line-height: 1;
+}
+
+.titleStart {
+  display: flex;
+  justify-content: flex-end;
+  width: var(--title-start-width);
+  overflow: hidden;
+}
+
+.titleEnd {
+  display: flex;
+  justify-content: flex-start;
+  width: var(--title-end-width);
+  overflow: hidden;
+}
+
+.letter {
+  display: block;
+  position: relative;
+}
+
+/* Same treatment as the PageWipeTransition label's mark. The span stretches
+   to the full line (glyph renders at its top, giving the superscript look)
+   so the entrance tween's yPercent travel matches the full-size letters. */
+.registered {
+  font-size: 0.6em;
+  line-height: 1;
+}
+
+/* Center box that opens between the two halves */
+.gap {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+}
+
+/* Image window — width is coupled to the gap-open tween in index.jsx
+   (1.9em); change them together. Sized in em so both axes scale with the
+   type; absolutely positioned (centered by .gap's flex alignment) so its
+   height can't inflate the title's line box. */
+.gapInner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.9em;
+  height: 1.8em;
+}
+
+.growFrame {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.growInner {
+  position: absolute;
+  width: 100%;
+  min-width: 1.9em;
+  height: 100%;
+}
+
+.image {
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
