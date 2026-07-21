@@ -13,7 +13,7 @@ export default function IntroLoader({ content }) {
   const [shouldPlay] = useState(() => !hasPlayed);
   const [done, setDone] = useState(false);
 
-  const { word, images, registeredMark } = content;
+  const { word, images } = content;
   const mid = Math.ceil(word.length / 2);
   const startLetters = word.slice(0, mid).split("");
   const endLetters = word.slice(mid).split("");
@@ -158,14 +158,6 @@ export default function IntroLoader({ content }) {
               {ch}
             </span>
           ))}
-          {registeredMark && (
-            <span
-              className={`${styles.letter} ${styles.registered}`}
-              data-intro-letter
-            >
-              {"®"}
-            </span>
-          )}
         </div>
       </div>
     </div>

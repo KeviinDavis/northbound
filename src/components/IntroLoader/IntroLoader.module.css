@@ -60,14 +60,6 @@
   position: relative;
 }
 
-/* Same treatment as the PageWipeTransition label's mark. The span stretches
-   to the full line (glyph renders at its top, giving the superscript look)
-   so the entrance tween's yPercent travel matches the full-size letters. */
-.registered {
-  font-size: 0.6em;
-  line-height: 1;
-}
-
 /* Center box that opens between the two halves */
 .gap {
   position: relative;

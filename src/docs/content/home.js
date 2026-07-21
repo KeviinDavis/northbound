@@ -14,7 +14,6 @@
 // One card image per work-grid company, matching work.js project images.
 export const intro = {
   word: "Northbound",
-  registeredMark: true,
   images: [
     "/images/work/FieldProvisions/Field Provisions11.png",
     "/images/work/TarnGoods/TarnGoods1.png",
